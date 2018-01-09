@@ -1,0 +1,139 @@
+<!-- Fastcommerce - EstiloProduto9.htm (Fast Preview Modelo) -->
+<ProdTop>
+<base target="_parent">
+<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script src='<PathTo file="htm/lojalib.js">'></script>
+<link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
+<IncludeTagged src="htm/lojasite.css" async>
+  <!-- Begin: JS scripts grid -->
+<script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
+<script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>
+<script>sF$.fnLinkDisp();ShowCartOnPage();</script>
+<style type="text/css">body{background:#ffffff;} #bTContainer{display:none} .vex.vex-theme-default .vex-content {    background: #ffffff !important;}
+.FastPreviewBox{display:flex;margin:25px auto;justify-content:space-between;}
+.box{width:50%; margin-right:20px;}
+}
+</style>
+</ProdTop> 
+
+<ProdDet>  
+<style>
+.FastPreviewBox .prices,.DivHomePriceProd{margin: 0px auto; padding:0px;height: inherit;}
+.FastPreviewBox .prices .price,.installments,.old-price,.FCPrice{text-align:left;font-family: 'Cabin', sans-serif !important;color:#0361a9;}
+.FastPreviewBox .prices .price,.FCPrice{font-size:30px}
+.FastPreviewBox span.home-price-por{font-weight:normal;font-size:17px;text-transform:lowercase;}
+.FastPreviewBox .DivHomePriceProd{display:flex;align-items:center;flex-wrap:wrap;}
+.FastPreviewBox .EstParc{width:100%;    font-size: 15px;    font-family: 'Cabin', sans-serif !important;  }
+span.home-price-cents {font-size:.8em}
+.FastPreviewBox .old-price{font-size:13px;text-transform:lowercase;font-weight:normal;margin-bottom:0px ; }
+.FastPreviewBox .old-price span{font-size:15px; text-transform:uppercase;}
+.FastPreviewBox  .installments{display:flex;font-size:15px;font-weight:bold;}
+.FastPreviewBox #idNameProductGridFC{font-size:25px;color:#444444;font-family: 'Cabin', sans-serif !important;    margin: 0 auto 10px}
+.FastPreviewBox .installments strong,.installments span,.installments{font-weight:normal!important;}
+.FastPreviewBox .installments span,.installments strong {padding-left: 3px;padding-right: 3px}
+.FastPreviewBox .installments strong:first-child{padding-left:0px; }
+.FastPreviewBox .installments strong:first-child span{padding:0px; }
+.FastPreviewBox .installments span:last-child{padding:0px; }
+.FastPreviewBox .FCfnShowEconomy{font-size:13px;display:block; color:#E91E63;width:100%!important;text-align:left;margin: 0 auto}
+.FastPreviewBox .FCBoxGrid{padding:0}
+.DivProductDet-sku{font-size:12px;color:#000000; font-weight: bold;}
+small#idCodProdGrid{color:#444;font-weight:bold;text-transform:uppercase;}
+</style>
+<link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1"/>
+ 
+<div class="FastPreviewBox"> 
+
+  <div class="box a">
+  <div id="idDivGridImg">
+   <a href="<ImagemProdAmp>" class="MagicZoomPlus" rel="hint:false;initialize-on: mouseover;"><img src="<ImagemProdDet>" alt="<NomeProd>" onError="MostraImgOnError(this,0)"></a> 
+  </div>
+  </div> 
+  <div class="box b"> 
+    <h1 id="idNameProductGridFC"><NomeProd></h1>
+    <div class="DivProductDet-sku">Ref: <small id="idCodProdGrid"><CodProd></small>
+    <div class="DivProductDet-sku">Marca: <small id="idCodProdGrid"> <NomeCat> </small><br><br>
+      <span><Marca></span>
+      <script type="text/javascript">iQtdOp=<OpiniaoQtd>;if(iQtdOp==0){document.write("<a href='/Opiniao.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>'><div class='ProductStyleReviewOffBoxFC'><div class='NotaOpiniaoVazio NotaOpiniaoVazio1'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio2'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio3'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio4'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio5'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio6'></div></div></a>")}            else {document.write("<a href='/Opiniao.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>'><div class='ProductStyleReviewOnBoxFC'><div class='ProductStyleReviewStarsOnFC'><OpiniaoMedia></div></a><div class='ProductStyleReviewQtyOnFC'>(<a href='#OP' style='text-decoration:none;'><OpiniaoQtd></a>)</div></div>")}</script>
+    </div>
+    <div class="DivHomePriceProd" id="idPriceGridFC<IDProduto>" style="white-space:nowrap;">
+      <div id="idProdPrice<IDProduto>"><script> sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div>      
+        <script>sF$.fnShowEconomy(<PrecoNum>,<PrecoOri>)</script> 
+    </div>  
+
+      <div class="col-small-12 FCGridMain" id="idMainGridFC_<IDProduto>"></div>
+  </div>
+
+</div> 
+ 
+ 
+ 
+<script>
+FCLib$.onReady(sF$.fnCustomizeIconsSocialNetworks(true));
+fnShowCEP(<IDProduto>);
+
+jQuery(".EstNameProdCross").addClass('text-overflow');
+</script>
+
+<script>
+fnShowCEPGrid(<IDProduto>); /*FC simulação de frete */
+</script>
+
+
+<script>
+var GridLib_<IDProduto>$=(function(){
+  var oProdTags={
+    ImagemProdDet:"<ImagemProdDet>",
+    ImagemProdAmp:"<ImagemProdAmp>",
+    CorVal:"<CorVal>",
+    CorRGB:"<CorRGB>",
+    IDProduto:<IDProduto>,
+    CodProd:"<CodProd>",
+    Estoque:<Estoque>,
+    PesoNum:"<PesoNum>",
+    PrecoOri:"<PrecoOri>",
+    PrecoNum:"<PrecoNum>",
+    MaxParcelasProdNum:<MaxParcelasProdNum>,
+    Adicional1Val:"<Adicional1Val>",
+    Adicional2Val:"<Adicional2Val>",
+    Adicional3Val:"<Adicional3Val>",
+    AdicionalD1Val:"<AdicionalD1Val>",
+    AdicionalD2Val:"<AdicionalD2Val>",
+    AdicionalD3Val:"<AdicionalD3Val>",
+    NomeAdicional1:"<NomeAdicional1>",
+    NomeAdicional2:"<NomeAdicional2>",
+    NomeAdicional3:"<NomeAdicional3>",
+    NomeAdicionalD1:"<NomeAdicionalD1>",
+    NomeAdicionalD2:"<NomeAdicionalD2>",
+    NomeAdicionalD3:"<NomeAdicionalD3>"
+  };
+
+  var aSubProdTags=[];
+  <sub>
+    aSubProdTags.push({
+      ImagemProdDet:"<ImagemProdDet>",
+      ImagemProdAmp:"<ImagemProdAmp>",
+      CorVal:"<CorVal>",
+      CorRGB:"<CorRGB>",
+      IDProduto:<IDProduto>,
+      CodProd:"<CodProd>",
+      Estoque:<Estoque>,
+      PesoNum:"<PesoNum>",
+      PrecoOri:"<PrecoOri>",
+      PrecoNum:"<PrecoNum>",
+      MaxParcelasProdNum:<MaxParcelasProdNum>,
+      Adicional1Val:"<Adicional1Val>",
+      Adicional2Val:"<Adicional2Val>",
+      Adicional3Val:"<Adicional3Val>",
+      AdicionalD1Val:"<AdicionalD1Val>",
+      AdicionalD2Val:"<AdicionalD2Val>",
+      AdicionalD3Val:"<AdicionalD3Val>"
+    });
+  </sub>
+  FCGrid$.fnGridAll(oProdTags,aSubProdTags);
+})();
+</script>
+</ProdDet>
+
+<ProdAmp><!-- Prod Amp --></ProdAmp>
+<ProdBottom></ProdBottom>

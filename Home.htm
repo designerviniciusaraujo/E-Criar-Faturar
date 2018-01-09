@@ -1,0 +1,155 @@
+<!-- POPNEWS -->  
+<script>  
+  <ListPathCat out="14">
+</script>
+<div id="BasePorNews" style="display:none;">
+  <div id="FullBackground"></div>
+  <div id="popupNews" class="Newspopup">
+    <a href="#" class="btnClose">
+    <img src="<BaseLoja>images/close-browser.svg" alt="Fechar" width="24" height="24" alt="" border="0">
+    </a>
+    <span>10% de Desconto <br>na primeira compra ?</span>
+    <p> Cadastre-se e ganhe cupom: </p>
+    <form class="formNews" id="formPopup" name=FormNewsletter method=GET action="Newsletter.asp" onSubmit="return ValidaNew();"/>
+      <input type=hidden name=IDLoja value="<idloja>">
+      <input type=hidden name=Y value="<Y>">
+      <input type=hidden name=FormatoHTML value="True">
+      <input type=hidden name=EnviarAssinante value="Enviar"> 
+      <input type="email" required name=Email placeholder="Insira seu e-mail aqui"><br><br>
+      <input type="submit" id="FirstSubmit" class="bt_news btnSubPop" name="ok" value="Eu quero"/>
+    </form>
+    <div class="popnews-down">
+      <a href="#" id="btnClose">
+      <button active class="btn-popnews">Não quero este desconto entrar no site!</button>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- POPNEWS --> 
+<!-- SECTION TOPICOS -->
+<section class="Htopics">
+  <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+    <div class="homeTopics primary"> 
+      <img src="<Baseloja>images/ic_creditcard.svg"> 
+      <span><strong> Parcele em 3x sem juros</strong><br>no cartão</span>
+    </div>
+  </div>
+  <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+    <div class="homeTopics second"> 
+      <img src="<Baseloja>images/ic_entregas.svg"> 
+      <span><strong> Fazemos entregas</strong><br>em todo Brasil</span>
+    </div>
+  </div>
+  <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+    <div class="homeTopics primary"> 
+      <img src="<Baseloja>images/ic_youtube2.svg"> 
+      <span><strong> Independência Financeira</strong><br>saiba mais no nosso blog</span>
+    </div>
+  </div>
+  <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+    <div class="homeTopics second last">  
+      <img src="<Baseloja>images/ic_payment.svg"> 
+      <span><strong> Assine nosso Canal no Youtube</strong><br>Videos com dicas e tutoriais</span>
+    </div>
+  </div>
+</section>
+<!-- SECTION TOPICOS -->
+<!-- SECTION DISPLAY PRODUTOS --> 
+<section class="DisplayProd">
+  <div class="col-large-12 col-mlarge-12 col-xlarge-12">
+    <div class="MainHomeBoxTitFC text-left">
+      <a href="#">
+        <h1>Destaques</h1>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+    </div>
+    <div class="main-home-space-rows"></div>
+    <div class="MainHomeBoxTitFC text-left">
+      <a href="#">
+        <h2>Novidades</h2>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+    </div>
+    <div class="main-home-space-rows"></div>
+    <div class="bannerHome" id="bannerHomeCenter">
+      <banner 15>
+    </div>
+    <div class="main-home-space-rows"></div>
+    <div class="MainHomeBoxTitFC text-left">
+      <a href="#">
+        <h2>Mais vendidos </h2>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+    </div>
+    <div class="main-home-space-rows"></div>
+    <div class="MainHomeBoxTitFC text-left">
+      <a href="#">
+        <h2>Ofertas</h2>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+      <div class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">
+        <prod out="p255" em="rand">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION DISPLAY PRODUTOS -->
+<!-- BANNERS -->
+<div id="FC-HideHomeBanners" style="display:none;">
+  <div class="row">
+    <div class=" bannerModel">
+      <div id="idBannerImgFC" class="BannerImgFC">
+        <a href="/prod,idloja,<IDLoja>,promocao,1,ofertas.htm"><img WavE-interchange="[none, (max-width: 640px)], [<Baseloja>images/fundotop.jpg, (min-width:641px)]" DisableLazyLoad alt="Aproveite nossas Promoções"></a>
+      </div>
+    </div>
+  </div>
+</div>

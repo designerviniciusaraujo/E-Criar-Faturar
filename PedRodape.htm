@@ -1,0 +1,85 @@
+<IncludeTagged src="lojaestilos.css" async>
+<!-- Begin: PedFooter -->
+  
+ <div class="PadRodapeFC">
+<style>
+
+  /*BUILD FOOTER REATIVE POSITION*/
+/*html {
+  height:100%;
+  width:100%;
+}
+body {
+  height:100%;
+  width:100%;
+  display:table;
+  table-layout:fixed;
+  margin:0px auto; 
+  font-family: 'Maven Pro';
+  width: 80%;    
+  text-transform:uppercase;
+  background:#46008c;
+  }
+.row {
+    display:table-row;
+    background:#ffce0a
+}
+.teste{
+  width:240px;
+   background:#804fd8;
+  margin:0 5px;
+}
+div.row {
+    height:100%;
+    background:#fff
+}*/
+
+
+.PadRodapeFC{padding: 30px;}
+.title-footer {color: #fff; margin: 10px auto; display: inline-block;text-transform: uppercase;}
+.PadRodapeFC{background:#000;}
+ul.payment.flx {min-width: 70%;    }
+ul.flx.security{min-width: 50%;float: none;justify-content: space-between;margin: 0}
+span.ic_help{background:#0361a9;border-radius:50px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-right:10px;}
+a.help{color:#757575; font-weight: bold}
+</style>
+ <div class="MainContainer"> 
+  <div class="row"> 
+
+    <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">
+      <span class="title-footer font-bold">Pagamentos</span>
+        <ul class="payment flx">
+          <li><img src="<PathTo file="images/ic_mastercard.svg">" width="50" height="32" alt="MasterCard"></li>
+          <li><img src="<PathTo file="images/ic_visa.svg">" width="50" height="32" alt="Visa"></li> 
+          <li><img src="<PathTo file="images/ic_bradesco.svg">" width="50" height="32" alt="Bradesco"></li> 
+          <li><img src="<PathTo file="images/ic_amex.svg">" width="50" height="32" alt="Amex"></li>
+          <li><img src="<PathTo file="images/ic_diners.svg">" width="50" height="32" alt="Diners"></li>
+          <li><img src="<PathTo file="images/ic_itau.svg">" width="50" height="32" alt="Itau"></li> 
+          <li><img src="<PathTo file="images/ic_uol.svg">" width="50" height="32" alt="uol"></li>   
+          <li><img src="<PathTo file="images/ic_boleto.svg">" width="50" height="32" alt="boleto"></li> 
+        </ul>
+    </div>
+    <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">
+    <span class="title-footer font-bold">Segurança</span>
+       <ul class="security flx">
+         <a href="/ajuda.asp?idloja=<IDLojaNum>#Seguranca"><img src="/images/100_https.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>
+         <img src="/images/LetsEncrypt.svg?cccfc=1" height=50 alt="Seu pedido com Segurança" title="Site Seguro">
+         <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=<StoreDomain>" target="_blank" rel="noopener"><img src="/images/Google_Loja_Segura.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>
+       </ul>
+    </div> 
+ </div>
+ </div>
+  </div>
+<script>  
+WebFontConfig = {
+  google:{families:['Lato:400,700']}
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})(); 
+</script>

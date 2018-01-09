@@ -1,0 +1,53 @@
+<p254>
+  <div class="DivHomeProd DesT" onclick="NoCascate('<URLProd>');">
+    <h3 class="DestProd">Em Destaque</h3>
+    <div class="DivHomeImagemProd">
+      <div id="id-video-image<IDProduto>"></div>
+      <script> sF$.fnShowVideo(<IDProduto>,[<ProdFiltersJS>],'<ImagemProdPri>',"<NomeProdUA>");</script>
+      <div class="DivHome-fastview font-bold" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow">ESPIAR</a></div>
+    </div>
+    <div class="DivHomeNomeProd">
+      <span class="HomeNomeProd font-regular">
+        <NomeProd>
+      </span>
+    </div>
+    <div class="DivHomePriceProd" style="white-space:nowrap;"> 
+      <a class="boxInteration"> 
+      <img src="<BaseLoja>images/bt_mais.png">
+      <button class="bt details"> Veja Mais</button>  
+      </a>
+    </div>
+  </div>
+</p254>
+<p255>
+  <div class="DivHomeProd" onclick="NoCascate('<URLProd>');">
+    <div class="DivHomeImagemProd">
+      <div id="id-video-image<IDProduto>"></div>
+      <script> sF$.fnShowVideo(<IDProduto>,[<ProdFiltersJS>],'<ImagemProdPri>',"<NomeProdUA>");</script>
+      <div class="DivHome-fastview font-bold" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow">ESPIAR</a></div>
+    </div>
+    <div class="DivHomeNomeProd">
+      <span class="HomeNomeProd font-regular">
+        <NomeProd>
+      </span>
+    </div>
+    <ul class="avalia">
+      <li class="text-left ProdRating stars">
+        <script type="text/javascript">
+          iQtdOp=<OpiniaoQtd>;
+          if(iQtdOp==0){document.write("<div class='ProductStyleReviewOffBoxFC'><div class='NotaOpiniaoVazio NotaOpiniaoVazio1'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio2'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio3'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio4'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio5'></div> </div>")}
+          else {document.write("<div class='ProductStyleReviewOnBoxFC'><div class='ProductStyleReviewStarsOnFC'><OpiniaoMedia></div><div class='ProductStyleReviewQtyOnFC'>(<a href='#OP' style='text-decoration:none;'><OpiniaoQtd></a>)</div></div>")}
+        </script>
+      </li>
+    </ul>
+    <div class="DivHomePriceProd" style="white-space:nowrap;">
+      <div id="idProdPrice<IDProduto>">
+        <script> sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>
+      </div>
+      <a class="boxInteration"> 
+      <img src="<BaseLoja>images/bt_mais.png">
+      <button class="bt details"> Veja Mais</button>  
+      </a>
+    </div>
+  </div>
+</p255>

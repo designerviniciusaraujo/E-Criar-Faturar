@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="<BaseLoja>htm/css/swipermin.css">
+<script src="<BaseLoja>htm/js/swipermin.js"></script>  
+<div class="swiper-container-banners" height="100%">
+  <div class="swiper-wrapper">  
+    <div id="oneBan" class="swiper-slide"></div> 
+    <div id="twoBan" class="swiper-slide"></div> 
+    <div id="threeBan" class="swiper-slide"></div> 
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> 
+  <script type="text/javascript"> sF$.MediaQuery( "<banner 1>", "<banner 2>","<banner 3>","<banner 4>","<banner 5>","<banner 6>","<banner 7>","<banner 8>","<banner 9>","<banner 10>");</script> 
+</div>
+
+<style media="screen">
+.swiper-container-banners { overflow: hidden; }
+.swiper-pagination {position: relative;text-align: right;bottom: 43px !important;left: -25px !important;} 
+.swiper-slide img{opacity:1!important;}
+.swiper-button-next, .swiper-button-prev {margin-top: -70px;}
+.swiper-container-banners{width:100%;height:100%;margin-left:auto;margin-right:auto;}
+.swiper-container-banners{margin:0 auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;}
+.swiper-pagination-bullet-active{background:#ef018d;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image: url(<BaseLoja>images/icoleftgray.svg) !important;width: 55px !important;height: 100px !important;background-size: contain !important;left: 0 !important;background-color: transparent;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image: url(<BaseLoja>images/icorigthgray.svg) !important;width:55px !important;height: 100px !important;background-size: contain !important;right: 0 !important;background-color: transparent;}
+</style>
+<script>
+  setTimeout(function(){
+    carousel.swipers.banners();
+  },1000);
+</script>
