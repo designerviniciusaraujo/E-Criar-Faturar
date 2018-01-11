@@ -4,7 +4,7 @@
     <span>
       <div>
         <strong>
-          <amp-img layout="fixed" width="30" height="20" src="<PathTo file="images/ic_phone.svg">"></amp-img>
+          <amp-img layout="fixed" alt="Contato-Telefone" width="30" height="20" src="<PathTo file="images/contato-telefone-criar-faturar.svg ">"></amp-img>
           SAC:
         </strong>
         (11) 2883-5091 
@@ -14,7 +14,7 @@
     <span>
       <div>
         <strong>
-          <amp-img layout="fixed" width="30" height="20" src="<PathTo file="images/ic_whatsapp.svg">"></amp-img>
+          <amp-img layout="fixed" alt="Contato-Whatsapp" width="30" height="20" src="<PathTo file="images/contato-whatsapp-criar-faturar.svg">"></amp-img>
           Whatsapp:
         </strong>
         (11) 97041-1835
@@ -38,7 +38,7 @@
     <PathAMP url="/home.asp?idloja=<IDLoja>">
     ">Home</amp-img></a> 
     <a href="
-    <PathAMP url="/account.asp?idloja=<IDLoja>&orders=1#Orders">
+    <PathAMP url="/track.asp?idloja=<IDLoja>">
     ">Meus Pedidos</amp-img></a>
     <a href="
     <PathAMP url="/addProduto.asp?idloja=<IDLojaNum>">
@@ -61,19 +61,19 @@
       <!-- LOGO -->
       <div class=amp-header-logo>
         <a href="<PathAMP url="/">">
-          <amp-img layout="fill" src="<PathTo file="images/logotopo.svg">"></amp-img>
+          <amp-img layout="fill" alt="Logo Marca Criar & Faturar" src="<PathTo file="images/logo-criar-e-faturar.svg">"></amp-img>
         </a>
       </div>
       <!-- LOGO -->
       <div>
         <div class="userData">  
-          <a href="/account.asp?idloja=10604&orders=1#Orders"><amp-img  layout="responsive" width="10"  height="10" src="<PathTo file="images/ic_user1.svg">"></amp-img></a> &nbsp
-          <a href="/account.asp?idloja=10604&orders=1#Orders"><amp-img  layout="responsive"   width="10"  height="10" src="<PathTo file="images/ic_pedidos1.svg">"></amp-img></a> 
+          <a href="/account.asp?idloja=<IDLoja>"><amp-img layout="responsive" width="10" height="10" alt="Minha Conta" src="<PathTo file="images/minhaconta.svg">"></amp-img></a> &nbsp
+          <a href="/track.asp?idloja=<IDLoja>"><amp-img layout="responsive" width="10" height="10" alt="LogoMarca Criar & Faturar" src="<PathTo file="images/meus-pedidos.svg">"></amp-img></a> 
         </div>
         <!-- CARRINHO -->
         <div class="amp-header-cart">
           <a href="/AddProduto.asp">
-            <amp-img layout="fill" src="<PathTo file="images/iconshopcart.svg">"></amp-img>
+            <amp-img layout="fill" alt="Carrinho de Compras" src="<PathTo file="images/iconshopcart.svg">"></amp-img>
           </a>
         </div>
       </div>
@@ -87,14 +87,14 @@
         <input type="hidden" name="useamp" value="true">
         <input type="text" value="<SearchText>" name="Texto" class="InputTextBusca amp-search-input" placeholder="Encontre aqui o seu produto">
         <button type="submit" class="amp-search-btn">
-          <amp-img src="<BaseLoja>images/iconsearch.svg" width="25" height="25" title="Buscar"></amp-img>
+          <amp-img alt="Buscar na produtos" src="<BaseLoja>images/iconsearch.svg" width="25" height="25" title="Buscar"></amp-img>
         </button>
       </form>
     </div>
     <!-- BUSCA -->
     <div class="amp-advanced-search">
       <span> 
-        <amp-img  layout="responsive" width="15" height="15" src="/icons/GoogleV1/svg/ic_play_arrow_24px.svg">
+        <amp-img layout="responsive" width="15" height="15" src="/icons/GoogleV1/svg/ic_play_arrow_24px.svg">
       </span>
       <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a>
     </div>
@@ -104,8 +104,9 @@
 <div class="baseMenu">
   <div class="container">
     <button on='tap:sidebar.toggle' class="amp-sidebar-btn">
-      <amp-img layout="fill" src="<PathTo file="images/menu.svg">"></amp-img>
+      <amp-img layout="fill" alt="Menu Loja Criar" src="<PathTo file="images/menu.svg">"></amp-img>
     </button>
+    <span>Menu</span>
   </div>
 </div>
 <div class="line-brand"></div>

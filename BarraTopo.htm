@@ -13,15 +13,15 @@
   <div class="MainContainer">
     <div class="row">
       <div class="hidden-xs col-medium-3 col-large-3 col-xlarge-3 text-left tolBrand">
-        <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logotopo.svg"></a> 
+        <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logo-criar-e-faturar.svg"></a> 
       </div>
-      <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6  text-left">
-        <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="/listaProdutos.asp">
+      <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6  text-left">  
+        <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="/listaProdutos.asp">  
           <input type="hidden" name="IDLoja" value="<IDLoja>">
           <input type="hidden" name="Digitada" value="True">
           <input type="text" id="autocomplete-toolbar" value="" name="Texto" class="InputTextBusca ui-autocomplete-input" placeholder="Digite sua busca aqui" autocomplete="off">
           <a href="#search"  class="btnSearch" onclick="sF$.fnSearchToolbarSubmit(document.TopSearchToolbarForm);">
-            <img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" title="Buscar">
+            <img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" alt="Buscar Produtos">
           </a>
           <div class="best-search">
             <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a> 
@@ -32,8 +32,8 @@
         <div class="FCToolBarCart flx">
           <div class="userData">
             <span>
-            <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar"  src="<BaseLoja>images/ic_user1.svg" width="20" height="20"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>
-            <a href="/account.asp?idloja=10604&orders=1#Orders"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_pedidos1.svg" width="20" height="20"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>
+            <a href="/cadastro.asp?idloja=<IDLoja>"><img src="<BaseLoja>images/minhaconta.svg" alt="Meu Cadastro" width="20" height="20"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>
+            <a href="/account.asp?idloja=10604&orders=1#Orders"><img src="<BaseLoja>images/meus-pedidos.svg" alt="Meus Pedidos" width="20" height="20"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>
             </span>
           </div>
           <div class="HeaderCartMainFC ToolBarCart">
@@ -57,11 +57,11 @@
 <div class="zfTopBar">
   <div class="zfTopBar-Content">
     <span>
-      <div><strong><img src="<BaseLoja>images/ic_phone.svg" width="20" height="20">SAC:</strong>(11) 2883-5091 </div>
+      <div><strong><img src="<BaseLoja>images/contato-telefone-criar-faturar.svg" alt="Contato Telefone" width="20" height="20">SAC:</strong>(11) 2883-5091 </div>
       <div><strong>Vendas:</strong>(11) 3228-1927</div>
     </span>
     <span>
-      <div><strong><img src="<BaseLoja>images/ic_whatsapp.svg" width="16" height="16">Whatsapp:</strong>(11) 97041-1835</div>
+      <div><strong><img src="<BaseLoja>images/contato-whatsapp-criar-faturar.svg" alt="Contato Whatsapp" width="16" height="16">Whatsapp:</strong>(11) 97041-1835</div>
     </span>
   </div>
 </div>
@@ -72,15 +72,15 @@
     <div class="row">
       <div class="col-small-6 col-medium-3 col-large-3 col-xlarge-3 one">
         <div class="zfToplogo flx">
-          <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logotopo.svg"></a> 
+          <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logo-criar-e-faturar.svg"></a> 
         </div>
       </div>
       <div class="col-small-6 col-medium-3 col-large-3 col-xlarge-3 two">
         <div class="Coltwo-box">
           <div class="userData">
             <span>
-            <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_user1.svg" id="ic_cadastro" width="30" height="30"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>
-            <a href="/account.asp?idloja=<IDLoja>&orders=1#Orders"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_pedidos1.svg" id="ic_pedidos" width="30" height="30"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>
+              <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Meu Cadastro" src="<BaseLoja>images/minhaconta.svg" id="ic_cadastro" width="35" height="35"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>&nbsp
+              <a href="/account.asp?idloja=<IDLoja>&orders=1#Orders"><img alt="Meus Pedidos" src="<BaseLoja>images/meus-pedidos.svg" id="ic_pedidos" width="35" height="35"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>
             </span>
           </div>
           <a href="/addProduto.asp?idloja=<IDLojaNum>">
@@ -148,12 +148,13 @@
             <a href="#">Veja tudo sobre <span id="nameOpt"></span></a>
           </div>
           <li class="hidden-smh"><a href="/home.asp?idloja=<IDLoja>">Home</a></li>
-          <li class="hidden-smh"><a href="/account.asp?idloja=<IDLoja>&orders=1#Orders">Meus Pedidos</a></li>
+          <li class="hidden-smh"><a href="/account.asp?idloja=10604&orders=1#Orders">Meus Pedidos</a></li>
           <li class="hidden-smh"><a href="/addProduto.asp?idloja=<IDLojaNum>">Minha Sacola</a></li>
           <li class="hidden-smh"><a href="/ajuda.asp?idloja=<IDLoja>">Dúvidas</a></li>
           <li class="hidden-smh"><a href="/faleconosco.asp?idloja=<IDLoja>">Fale Conosco</a></li>
           <li>
-            <a href="">Artesanato</a>
+            <a href="/faleconosco.asp?idloja=<IDLoja>">Artesanato</a>
+          
             <ul class="subList">
               <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">
                 <li><a class="btninteration" href="#"><span>one</span></a></li>
@@ -187,7 +188,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">Aviamentos</a>
+            <a href="#">Aviamentos</a> 
             <ul class="subList" >
               <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">
                 <li><a class="btninteration" href="#"><span>two</span></a></li>
@@ -198,8 +199,8 @@
                 <li><a class="btninteration" href="#"><span>Etiqueta TAG</span></a></li>
                 <li><a class="btninteration" href="#"><span>Fita Métrica</span></a></li>
                 <li><a class="btninteration" href="#"><span>Giz</span></a></li>
-                <li><a class="btninteration" href="#"><span> Pistola de TAG / Refil TAG</span></a></li>
-                <li><a class="btninteration" href="#"><span> Linha de Crochê</span></a></li>
+                <li><a class="btninteration" href="#"><span>Pistola de TAG / Refil TAG</span></a></li>
+                <li><a class="btninteration" href="#"><span>Linha de Crochê</span></a></li>
                 <li><a class="btninteration" href="#"><span>Tesoura </span></a></li>
               </div>
               <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">
@@ -494,38 +495,7 @@
             </ul>
           </li>
           <li class="MegaMenu-right">
-            <a href="#">Ziper</a>
-            <ul class="subList" >
-              <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">
-                <li><a class="btninteration" href="#"><span>Abridor</span></a></li>
-                <li><a class="btninteration" href="#"><span>Agulheiro</span></a></li>
-                <li><a class="btninteration" href="#"><span>Almofada</span></a></li>
-                <li><a class="btninteration" href="#"><span>Carretilha</span></a></li>
-                <li><a class="btninteration" href="#"><span>Estilete</span></a></li>
-                <li><a class="btninteration" href="#"><span>Etiqueta TAG</span></a></li>
-                <li><a class="btninteration" href="#"><span>Fita Métrica</span></a></li>
-                <li><a class="btninteration" href="#"><span>Giz</span></a></li>
-                <li><a class="btninteration" href="#"><span> Pistola de TAG / Refil TAG</span></a></li>
-                <li><a class="btninteration" href="#"><span> Linha de Crochê</span></a></li>
-                <li><a class="btninteration" href="#"><span>Tesoura </span></a></li>
-              </div>
-              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">
-                <li><a class="btninteration" href="#"><span>Acessórios de Aviamento BUG</span></a></li>
-                <li><a class="btninteration" href="#"><span>Alfinete</span></a></li>
-                <li><a class="btninteration" href="#"><span>Bobina</span></a></li>
-                <li><a class="btninteration" href="#"><span>Cola / Cola Quente</span></a></li>
-                <li><a class="btninteration" href="#"><span>Estojo de Costura</span></a></li>
-                <li><a class="btninteration" href="#"><span>FIta de Fixação</span></a></li>
-                <li><a class="btninteration" href="#"><span>Fivela Cromada</span></a></li>
-                <li><a class="btninteration" href="#"><span>Imã</span></a></li>
-                <li><a class="btninteration" href="#"><span>Marcador de Costura</span></a></li>
-                <li><a class="btninteration" href="#"><span>Strass em Folha</span></a></li>
-                <li><a class="btninteration" href="#"><span>Ver todos</span></a></li>
-              </div>
-              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">
-                <prod out="p254" em="rand">
-              </div>
-            </ul>
+            <a href="#">Ziper</a> 
           </li>
           <li class="diffStrong"><a href="/listaprodutos.asp?idloja=<IDLoja>&promocao=true">Ofertas</a></li>
         </span>

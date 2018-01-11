@@ -1,0 +1,1434 @@
+[1mdiff --git a/BannerHome.html b/BannerHome.html[m
+[1mindex 8f8800a..1c369e2 100644[m
+[1m--- a/BannerHome.html[m
+[1m+++ b/BannerHome.html[m
+[36m@@ -1,22 +1,20 @@[m
+ <link rel="stylesheet" href="<BaseLoja>htm/css/swipermin.css">[m
+ <script src="<BaseLoja>htm/js/swipermin.js"></script>  [m
+ <div class="swiper-container-banners" height="100%">[m
+[31m-  <div class="swiper-wrapper">  [m
+[31m-    <div id="oneBan" class="swiper-slide"></div> [m
+[31m-    <div id="twoBan" class="swiper-slide"></div> [m
+[31m-    <div id="threeBan" class="swiper-slide"></div> [m
+[32m+[m[32m  <div class="swiper-wrapper">[m
+[32m+[m[32m    <div id="oneBan" class="swiper-slide"></div>[m
+[32m+[m[32m    <div id="twoBan" class="swiper-slide"></div>[m
+[32m+[m[32m    <div id="threeBan" class="swiper-slide"></div>[m
+   </div>[m
+   <div class="swiper-pagination"></div>[m
+   <div class="swiper-button-next"></div>[m
+[31m-  <div class="swiper-button-prev"></div> [m
+[31m-  <script type="text/javascript"> sF$.MediaQuery( "<banner 1>", "<banner 2>","<banner 3>","<banner 4>","<banner 5>","<banner 6>","<banner 7>","<banner 8>","<banner 9>","<banner 10>");</script> [m
+[31m-</div>[m
+[31m-[m
+[32m+[m[32m  <div class="swiper-button-prev"></div>[m
+[32m+[m[32m</div>[m[41m  [m
+ <style media="screen">[m
+[31m-.swiper-container-banners { overflow: hidden; }[m
+[31m-.swiper-pagination {position: relative;text-align: right;bottom: 43px !important;left: -25px !important;} [m
+[32m+[m[32m.swiper-container-banners{overflow:hidden;}[m
+[32m+[m[32m.swiper-pagination{position:relative;text-align:right;bottom:43px!important;left:-25px!important;}[m
+ .swiper-slide img{opacity:1!important;}[m
+[31m-.swiper-button-next, .swiper-button-prev {margin-top: -70px;}[m
+[32m+[m[32m.swiper-button-next,.swiper-button-prev{margin-top:-70px;}[m
+ .swiper-container-banners{width:100%;height:100%;margin-left:auto;margin-right:auto;}[m
+ .swiper-container-banners{margin:0 auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;}[m
+ .swiper-pagination-bullet-active{background:#ef018d;}[m
+[1mdiff --git a/BarraTopo.htm b/BarraTopo.htm[m
+[1mindex 251bac9..360ef1d 100644[m
+[1m--- a/BarraTopo.htm[m
+[1m+++ b/BarraTopo.htm[m
+[36m@@ -13,15 +13,15 @@[m
+   <div class="MainContainer">[m
+     <div class="row">[m
+       <div class="hidden-xs col-medium-3 col-large-3 col-xlarge-3 text-left tolBrand">[m
+[31m-        <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logotopo.svg"></a> [m
+[32m+[m[32m        <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logo-criar-e-faturar.svg"></a>[m[41m [m
+       </div>[m
+[31m-      <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6  text-left">[m
+[31m-        <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="/listaProdutos.asp">[m
+[32m+[m[32m      <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6  text-left">[m[41m  [m
+[32m+[m[32m        <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="/listaProdutos.asp">[m[41m  [m
+           <input type="hidden" name="IDLoja" value="<IDLoja>">[m
+           <input type="hidden" name="Digitada" value="True">[m
+           <input type="text" id="autocomplete-toolbar" value="" name="Texto" class="InputTextBusca ui-autocomplete-input" placeholder="Digite sua busca aqui" autocomplete="off">[m
+           <a href="#search"  class="btnSearch" onclick="sF$.fnSearchToolbarSubmit(document.TopSearchToolbarForm);">[m
+[31m-            <img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" title="Buscar">[m
+[32m+[m[32m            <img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" alt="Buscar Produtos">[m
+           </a>[m
+           <div class="best-search">[m
+             <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a> [m
+[36m@@ -32,8 +32,8 @@[m
+         <div class="FCToolBarCart flx">[m
+           <div class="userData">[m
+             <span>[m
+[31m-            <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar"  src="<BaseLoja>images/ic_user1.svg" width="20" height="20"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>[m
+[31m-            <a href="/account.asp?idloja=10604&orders=1#Orders"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_pedidos1.svg" width="20" height="20"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>[m
+[32m+[m[32m            <a href="/cadastro.asp?idloja=<IDLoja>"><img src="<BaseLoja>images/minhaconta.svg" alt="Meu Cadastro" width="20" height="20"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>[m
+[32m+[m[32m            <a href="/account.asp?idloja=10604&orders=1#Orders"><img src="<BaseLoja>images/meus-pedidos.svg" alt="Meus Pedidos" width="20" height="20"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>[m
+             </span>[m
+           </div>[m
+           <div class="HeaderCartMainFC ToolBarCart">[m
+[36m@@ -57,11 +57,11 @@[m
+ <div class="zfTopBar">[m
+   <div class="zfTopBar-Content">[m
+     <span>[m
+[31m-      <div><strong><img src="<BaseLoja>images/ic_phone.svg" width="20" height="20">SAC:</strong>(11) 2883-5091 </div>[m
+[32m+[m[32m      <div><strong><img src="<BaseLoja>images/contato-telefone-criar-faturar.svg" alt="Contato Telefone" width="20" height="20">SAC:</strong>(11) 2883-5091 </div>[m
+       <div><strong>Vendas:</strong>(11) 3228-1927</div>[m
+     </span>[m
+     <span>[m
+[31m-      <div><strong><img src="<BaseLoja>images/ic_whatsapp.svg" width="16" height="16">Whatsapp:</strong>(11) 97041-1835</div>[m
+[32m+[m[32m      <div><strong><img src="<BaseLoja>images/contato-whatsapp-criar-faturar.svg" alt="Contato Whatsapp" width="16" height="16">Whatsapp:</strong>(11) 97041-1835</div>[m
+     </span>[m
+   </div>[m
+ </div>[m
+[36m@@ -72,15 +72,15 @@[m
+     <div class="row">[m
+       <div class="col-small-6 col-medium-3 col-large-3 col-xlarge-3 one">[m
+         <div class="zfToplogo flx">[m
+[31m-          <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logotopo.svg"></a> [m
+[32m+[m[32m          <a href="/home.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/logo-criar-e-faturar.svg"></a>[m[41m [m
+         </div>[m
+       </div>[m
+       <div class="col-small-6 col-medium-3 col-large-3 col-xlarge-3 two">[m
+         <div class="Coltwo-box">[m
+           <div class="userData">[m
+             <span>[m
+[31m-            <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_user1.svg" id="ic_cadastro" width="30" height="30"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>[m
+[31m-            <a href="/account.asp?idloja=<IDLoja>&orders=1#Orders"><img alt="Loja Criar & Faturar" src="<BaseLoja>images/ic_pedidos1.svg" id="ic_pedidos" width="30" height="30"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>[m
+[32m+[m[32m              <a href="/cadastro.asp?idloja=<IDLoja>"><img alt="Meu Cadastro" src="<BaseLoja>images/minhaconta.svg" id="ic_cadastro" width="35" height="35"><span class="hidden-xs hidden-sm">Meu Cadastro</span></a>&nbsp[m
+[32m+[m[32m              <a href="/account.asp?idloja=<IDLoja>&orders=1#Orders"><img alt="Meus Pedidos" src="<BaseLoja>images/meus-pedidos.svg" id="ic_pedidos" width="35" height="35"><span class="hidden-xs hidden-sm">Meus Pedidos</span></a>[m
+             </span>[m
+           </div>[m
+           <a href="/addProduto.asp?idloja=<IDLojaNum>">[m
+[36m@@ -148,12 +148,13 @@[m
+             <a href="#">Veja tudo sobre <span id="nameOpt"></span></a>[m
+           </div>[m
+           <li class="hidden-smh"><a href="/home.asp?idloja=<IDLoja>">Home</a></li>[m
+[31m-          <li class="hidden-smh"><a href="/account.asp?idloja=<IDLoja>&orders=1#Orders">Meus Pedidos</a></li>[m
+[32m+[m[32m          <li class="hidden-smh"><a href="/account.asp?idloja=10604&orders=1#Orders">Meus Pedidos</a></li>[m
+           <li class="hidden-smh"><a href="/addProduto.asp?idloja=<IDLojaNum>">Minha Sacola</a></li>[m
+           <li class="hidden-smh"><a href="/ajuda.asp?idloja=<IDLoja>">Dúvidas</a></li>[m
+           <li class="hidden-smh"><a href="/faleconosco.asp?idloja=<IDLoja>">Fale Conosco</a></li>[m
+           <li>[m
+[31m-            <a href="">Artesanato</a>[m
+[32m+[m[32m            <a href="/faleconosco.asp?idloja=<IDLoja>">Artesanato</a>[m
+[32m+[m[41m          [m
+             <ul class="subList">[m
+               <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">[m
+                 <li><a class="btninteration" href="#"><span>one</span></a></li>[m
+[36m@@ -187,7 +188,7 @@[m
+             </ul>[m
+           </li>[m
+           <li>[m
+[31m-            <a href="#">Aviamentos</a>[m
+[32m+[m[32m            <a href="#">Aviamentos</a>[m[41m [m
+             <ul class="subList" >[m
+               <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">[m
+                 <li><a class="btninteration" href="#"><span>two</span></a></li>[m
+[36m@@ -198,8 +199,8 @@[m
+                 <li><a class="btninteration" href="#"><span>Etiqueta TAG</span></a></li>[m
+                 <li><a class="btninteration" href="#"><span>Fita Métrica</span></a></li>[m
+                 <li><a class="btninteration" href="#"><span>Giz</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span> Pistola de TAG / Refil TAG</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span> Linha de Crochê</span></a></li>[m
+[32m+[m[32m                <li><a class="btninteration" href="#"><span>Pistola de TAG / Refil TAG</span></a></li>[m
+[32m+[m[32m                <li><a class="btninteration" href="#"><span>Linha de Crochê</span></a></li>[m
+                 <li><a class="btninteration" href="#"><span>Tesoura </span></a></li>[m
+               </div>[m
+               <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">[m
+[36m@@ -494,38 +495,7 @@[m
+             </ul>[m
+           </li>[m
+           <li class="MegaMenu-right">[m
+[31m-            <a href="#">Ziper</a>[m
+[31m-            <ul class="subList" >[m
+[31m-              <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">[m
+[31m-                <li><a class="btninteration" href="#"><span>Abridor</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Agulheiro</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Almofada</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Carretilha</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Estilete</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Etiqueta TAG</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Fita Métrica</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Giz</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span> Pistola de TAG / Refil TAG</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span> Linha de Crochê</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Tesoura </span></a></li>[m
+[31m-              </div>[m
+[31m-              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">[m
+[31m-                <li><a class="btninteration" href="#"><span>Acessórios de Aviamento BUG</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Alfinete</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Bobina</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Cola / Cola Quente</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Estojo de Costura</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>FIta de Fixação</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Fivela Cromada</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Imã</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Marcador de Costura</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Strass em Folha</span></a></li>[m
+[31m-                <li><a class="btninteration" href="#"><span>Ver todos</span></a></li>[m
+[31m-              </div>[m
+[31m-              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">[m
+[31m-                <prod out="p254" em="rand">[m
+[31m-              </div>[m
+[31m-            </ul>[m
+[32m+[m[32m            <a href="#">Ziper</a>[m[41m [m
+           </li>[m
+           <li class="diffStrong"><a href="/listaprodutos.asp?idloja=<IDLoja>&promocao=true">Ofertas</a></li>[m
+         </span>[m
+[1mdiff --git a/EstiloProduto.htm b/EstiloProduto.htm[m
+[1mindex a7da4a7..6bf62b7 100644[m
+[1m--- a/EstiloProduto.htm[m
+[1m+++ b/EstiloProduto.htm[m
+[36m@@ -1,14 +1,8 @@[m
+ <!-- Fastcommerce - EstiloProduto.htm : Grid v1 08.07.2015  (Store 3) -->[m
+ <ProdTop>[m
+[31m-  <link href="[m
+[31m-  <PathTo file="htm/css/fc_grid_v1.css">[m
+[31m-  " rel="stylesheet" type="text/css"> [m
+[31m-  <link href="[m
+[31m-  <PathTo file="htm/css/buytogether.css">[m
+[31m-  " rel="stylesheet" type="text/css"> [m
+[31m-  <script src="[m
+[31m-  <PathTo file="htm/js/fc_grid_v1.js">[m
+[31m-  "></script>[m
+[32m+[m[32m  <link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">[m[41m [m
+[32m+[m[32m  <link href="<PathTo file="htm/css/buytogether.css">" rel="stylesheet" type="text/css">[m
+[32m+[m[32m  <script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>[m
+   <!-- Click "Ver Mais" Scroll to description -->[m
+   <script>[m
+     jQuery(document).ready(function (){[m
+[36m@@ -239,9 +233,7 @@[m
+   <!-- End: Cross Selling - Description - Video - BarCode - Comments -->[m
+   <!-- Javascript ZipCode - Description CrossSelling -->[m
+   <script>[m
+[31m-    FCLib$.onReady(sF$.fnCustomizeIconsSocialNetworks(true));[m
+[31m-    fnShowCEP(<IDProduto>);[m
+[31m-    [m
+[32m+[m[32m    FCLib$.onReady(sF$.fnCustomizeIconsSocialNetworks(true));[m[41m  [m
+     jQuery(".EstNameProdCross").addClass('text-overflow');[m
+   </script>[m
+   <script>[m
+[1mdiff --git a/EstiloProdutoOut.htm b/EstiloProdutoOut.htm[m
+[1mindex 6f4bcc7..15f2863 100644[m
+[1m--- a/EstiloProdutoOut.htm[m
+[1m+++ b/EstiloProdutoOut.htm[m
+[36m@@ -2,10 +2,9 @@[m
+   <div class="DivHomeProd DesT" onclick="NoCascate('<URLProd>');">[m
+     <h3 class="DestProd">Em Destaque</h3>[m
+     <div class="DivHomeImagemProd">[m
+[31m-      <div id="id-video-image<IDProduto>"></div>[m
+[31m-      <script> sF$.fnShowVideo(<IDProduto>,[<ProdFiltersJS>],'<ImagemProdPri>',"<NomeProdUA>");</script>[m
+[31m-      <div class="DivHome-fastview font-bold" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow">ESPIAR</a></div>[m
+[31m-    </div>[m
+[32m+[m[32m    <ImagemProd>[m
+[32m+[m[41m     [m
+[32m+[m[32m      </div>[m
+     <div class="DivHomeNomeProd">[m
+       <span class="HomeNomeProd font-regular">[m
+         <NomeProd>[m
+[1mdiff --git a/Home.htm b/Home.htm[m
+[1mindex 83bd1cf..424d87e 100644[m
+[1m--- a/Home.htm[m
+[1m+++ b/Home.htm[m
+[36m@@ -30,25 +30,25 @@[m
+ <section class="Htopics">[m
+   <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">[m
+     <div class="homeTopics primary"> [m
+[31m-      <img src="<Baseloja>images/ic_creditcard.svg"> [m
+[32m+[m[32m      <img alt="Parcelamento" src="<Baseloja>images/parcelamento-cartao.svg">[m[41m [m
+       <span><strong> Parcele em 3x sem juros</strong><br>no cartão</span>[m
+     </div>[m
+   </div>[m
+   <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">[m
+     <div class="homeTopics second"> [m
+[31m-      <img src="<Baseloja>images/ic_entregas.svg"> [m
+[32m+[m[32m      <img alt="Entregas todo Brasil" src="<Baseloja>images/ic_entregas.svg">[m[41m [m
+       <span><strong> Fazemos entregas</strong><br>em todo Brasil</span>[m
+     </div>[m
+   </div>[m
+   <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">[m
+     <div class="homeTopics primary"> [m
+[31m-      <img src="<Baseloja>images/ic_youtube2.svg"> [m
+[32m+[m[32m      <img alt="Independência Financeira" src="<Baseloja>images/vida-financeira.svg">[m[41m [m
+       <span><strong> Independência Financeira</strong><br>saiba mais no nosso blog</span>[m
+     </div>[m
+   </div>[m
+   <div  class="col-small-12 col-medium-6 col-large-3 col-mlarge-3 col-xlarge-3">[m
+[31m-    <div class="homeTopics second last">  [m
+[31m-      <img src="<Baseloja>images/ic_payment.svg"> [m
+[32m+[m[32m    <div class="homeTopics second last">[m[41m   [m
+[32m+[m[32m      <img alt="Canal Youtube" src="<Baseloja>images/ic_youtube.svg">[m[41m [m
+       <span><strong> Assine nosso Canal no Youtube</strong><br>Videos com dicas e tutoriais</span>[m
+     </div>[m
+   </div>[m
+[36m@@ -97,9 +97,7 @@[m
+       </div>[m
+     </div>[m
+     <div class="main-home-space-rows"></div>[m
+[31m-    <div class="bannerHome" id="bannerHomeCenter">[m
+[31m-      <banner 15>[m
+[31m-    </div>[m
+[32m+[m[32m    <div class="bannerHome" id="bannerHomeCenter"></div>[m
+     <div class="main-home-space-rows"></div>[m
+     <div class="MainHomeBoxTitFC text-left">[m
+       <a href="#">[m
+[1mdiff --git a/LojaLib.js b/LojaLib.js[m
+[1mindex b7e6ad0..128bf80 100644[m
+[1m--- a/LojaLib.js[m
+[1m+++ b/LojaLib.js[m
+[36m@@ -55,11 +55,10 @@[m [mvar sF$=(function(){[m
+    // RESET STORAGE   [m
+    }[m
+ [m
+[31m-  function MenuStore(){ [m
+[32m+[m[32m  function MenuStore(){[m[41m  [m
+ [m
+     var oToggle=document.getElementById("MenuToggle");[m
+[31m-    var oMClose=document.getElementById("MenuClose");  [m
+[31m-   [m
+[32m+[m[32m    var oMClose=document.getElementById("MenuClose");[m[41m   [m
+     var OcontentMenu=document.querySelector(".contentMenu");   [m
+     var OsubList=document.querySelector(".subList");   [m
+     var oreturnMenu=document.querySelector(".Menubreadcrumb");[m
+[36m@@ -69,72 +68,58 @@[m [mvar sF$=(function(){[m
+     [m
+     var oAllCat=FCLib$.oCatMenu;[m
+     oToggle.onclick = function(){OpenMenu();}[m
+[31m-    oMClose.onclick = function(){  subMenList.classList.remove("on"); oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}   [m
+[31m-  [m
+[31m-    for (var i = 0; i < oMenuIten.length;  i++) {  [m
+[31m-      var oItemUrl=oMenuIten[i].childNodes[1]  [m
+[31m-    	var oItems=oMenuIten[i] [m
+[31m- [m
+[32m+[m[32m    oMClose.onclick = function(){   if(subMenList){ subMenList.classList.remove("on");}  oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}[m[41m    [m
+ [m
+[31m-      // DESABILITA URL SE HOUVER SUB[m
+[31m-	    if(oItemUrl!=undefined){   [m
+[31m-        var sSvgNext= "<svg version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 405.457 405.457' style='enable-background:new 0 0 405.457 405.457;' xml:space='preserve' width='512px' height='512px'><g> <path d='M64.147,331.322c0.078,4.985,2.163,9.911,5.688,13.438l55,55c3.599,3.601,8.659,5.697,13.75,5.697   c5.091,0,10.151-2.096,13.75-5.697l183.281-183.282c3.601-3.599,5.697-8.659,5.697-13.75s-2.096-10.151-5.697-13.75L152.335,5.697   C148.736,2.096,143.676,0,138.585,0c-5.091,0-10.151,2.096-13.75,5.697l-55,55c-3.591,3.598-5.681,8.651-5.681,13.734   s2.09,10.136,5.681,13.734l114.562,114.563L69.835,317.291C66.171,320.958,64.07,326.139,64.147,331.322L64.147,331.322z' fill='#ef018d'/></g></svg>";[m
+[31m-        oItemUrl.style.pointerEvents="none" [m
+[31m-      }[m
+ [m
+[31m-      // if (window.matchMedia("(min-width: 1024px)").matches){ [m
+[31m-         [m
+[31m-      //   oMenuIten[i].onmousemove=function(){  [m
+[31m-      //     oiTem=this.childNodes[3];siTem=this.childNodes[1]; [m
+[31m-      //     setTimeout(function(){ [m
+[31m-            [m
+[31m-      //       console.log("oiTem",oiTem)[m
+[31m-      //       console.log("siTem",siTem)[m
+[31m-      //        oiTem.classList.toogle("on"); [m
+[31m-      //        siTem.style.pointerEvents="inherit"},80);[m
+[31m-      //   }[m
+[31m-      //   oMenuIten[i].onmouseout=function(){    [m
+[31m-      //      oiTem=this.childNodes[3];siTem=this.childNodes[1]; [m
+[31m-      //     setTimeout(function(){[m
+[31m-      //       // oiTem.classList.remove("on"); [m
+[31m-      //        oiTem.classList.toogle("on"); [m
+[31m-[m
+[31m-            [m
+[31m-[m
+[31m-[m
+[31m-      //       siTem.style.pointerEvents="none"},80);[m
+[31m-      //   }[m
+[31m-      // }[m
+[31m-    [m
+[31m-      if (window.matchMedia("(max-width: 1023px)").matches){   [m
+[32m+[m[32m    for (var i = 0; i < oMenuIten.length;  i++) {[m[41m  [m
+[32m+[m[32m      var oItemUrl=oMenuIten[i].childNodes[1];[m[41m  [m
+[32m+[m[41m    [m	[32mvar oItems=oMenuIten[i];[m[41m  [m
+[32m+[m[32m      var oItemsSubL=oItems.childNodes[3];[m[41m  [m
+ [m
+[32m+[m[32m      // DESABILITA URL SE HOUVER SUB[m[41m [m
+[32m+[m	[32m    if(oItemUrl!=undefined){[m[41m    [m
+[32m+[m[32m        oItemUrl.style.pointerEvents="none"[m[41m   [m
+[32m+[m[32m      }[m[41m  [m
+[32m+[m[32m      //HAVENDO SUB-CATEGORIAS É EXIBIDO ICONE NO ITEM[m
+[32m+[m[32m      if(oItemsSubL){[m[41m        [m
+[32m+[m[32m        var sSvgNext= "<i class=iconNext><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' viewBox='0 0 129 129' enable-background='new 0 0 129 129' width='512px' height='512px'><g><path d='m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z' fill='#a5a4a4'/></g></svg><i>";[m
+[32m+[m[32m        oItems.innerHTML+=sSvgNext;[m[41m [m
+[32m+[m[32m      }[m[41m   [m
+[32m+[m[32m      if (window.matchMedia("(max-width: 1023px)").matches){[m[41m     [m
+          oMenuIten[i].onclick=function(){    [m
+          subMenList=this.childNodes[3]; [m
+[31m-         if(subMenList!=undefined){[m
+[31m-[m
+[31m-         subMenList.classList.add("on"); [m
+[31m-         var snameOpt=this.childNodes[1].innerHTML[m
+[31m-         var oSt=localStorage.setItem("snameOpt",snameOpt);[m
+[31m-         var OnameOpt=document.getElementById("nameOpt") [m
+[31m-         OnameOpt.innerHTML = localStorage.getItem( "snameOpt"); [m
+[31m-         oreturnMenu.style.visibility="visible";  [m
+[31m-[m
+[31m-           // EXPOSIÇÃO MENU TABLETS [m
+[31m-           if (window.matchMedia("(min-width: 768px)").matches){[m
+[31m-              OcontentMenu.classList.remove("on");setTimeout(function(){  OcontentMenu.style.width="100%"; OsubList.style.width="100%"; oMClose.style.display="block";}, 100); ;[m
+[31m-           }  [m
+[31m-             CloseMenu();    [m
+[32m+[m[32m         // var sUrlThis=this.childNodes[1].getAttribute("href");[m
+[32m+[m[32m         var sUrlThis=this.childNodes[1].getAttribute("href");[m
+[32m+[m[41m       [m
+[32m+[m[32m         if(subMenList!=undefined){[m[41m [m
+[32m+[m[32m          OcontentMenu.style.overflow="inherit";[m[41m     [m
+[32m+[m[32m          OcontentMenu.classList.remove("on");[m[41m [m
+[32m+[m[32m          oreturnMenu.style.visibility="visible";[m[41m  [m
+[32m+[m[32m          subMenList.classList.add("on");[m[41m [m
+[32m+[m
+[32m+[m[32m          var snameOpt=this.childNodes[1].innerHTML[m[41m  [m
+[32m+[m
+[32m+[m[32m          var oSt=localStorage.setItem("snameOpt",snameOpt);[m[41m [m
+[32m+[m[32m          var OnameOpt=document.getElementById("nameOpt")[m[41m [m
+[32m+[m[32m          // OnameOpt.innerHTML=localStorage.getItem("snameOpt");[m[41m  [m
+[32m+[m[32m          var sStorageGetOpt=localStorage.getItem("snameOpt");[m[41m  [m
+[32m+[m
+[32m+[m
+[32m+[m[32m          OnameOpt.innerHTML="<a href="+sUrlThis+">"+sStorageGetOpt+"</a>";[m[41m  [m
+[32m+[m
+[32m+[m[32m          // EXPOSIÇÃO MENU TABLETS[m[41m [m
+[32m+[m[32m          if (window.matchMedia("(min-width: 768px)").matches){[m
+[32m+[m[32m             setTimeout(function(){ OsubList.style.width="100%"; oMClose.style.display="block";}, 100); ;[m
+[32m+[m[32m          }[m[41m  [m
+[32m+[m[32m           CloseMenu();[m[41m    [m
+          }[m
+         }[m
+[31m-       }[m
+[32m+[m[32m      }[m
+     }  [m
+     returnMenu.onclick=function(){ [m
+[31m-      setTimeout(function(){ oMClose.style.display="block";}, 300); [m
+[32m+[m[32m      setTimeout(function(){ oMClose.style.display="block";}, 300);[m[41m  [m
+       subMenList.classList.remove("on");  [m
+[31m-      oreturnMenu.style.visibility="hidden";[m
+[31m-       if (window.matchMedia("(min-width: 768px)").matches){[m
+[31m-         OcontentMenu.style.width="250px";   [m
+[31m-       } [m
+[32m+[m[32m      oreturnMenu.style.visibility="hidden";[m[41m [m
+       OpenMenu();[m
+     } [m
+ [m
+[36m@@ -142,30 +127,33 @@[m [mvar sF$=(function(){[m
+        if (window.matchMedia("(max-width: 768px)").matches){oMClose.style.display="none";}[m
+        OcontentMenu.classList.remove("on");  [m
+     }[m
+[31m-    function OpenMenu(){ [m
+[31m-      console.log("Done")[m
+[32m+[m[32m    function OpenMenu(){[m[41m  [m
+       setTimeout(function(){oMClose.style.display="block";}, 400);  [m
+       OcontentMenu.classList.add("on");    [m
+[32m+[m[32m      OcontentMenu.style.overflow="auto";[m[41m    [m
+     } [m
+   }[m
+ [m
+ [m
+[31m-  function MediaQuery(banner1, banner2, banner3, banner4, banner5, banner6, banner7, banner8, banner9, banner10){  [m
+[32m+[m[32m  function MediaQuery(banner1, banner2, banner3, banner4, banner5, banner6, banner7, banner8, banner9, banner10,banner15,banner20){[m[41m   [m
+[32m+[m[32m    if(FC$.Page=="Home"){[m[41m   [m
+     var ShowBanners=document.getElementById("oneBan");  [m
+     var ShowBannTwo=document.getElementById("twoBan");  [m
+     var ShowBannThr=document.getElementById("threeBan");  [m
+[31m-    var errMsg=ShowBanners.innerHTML="Atenção! Esta loja não possui banners cadastrados!";[m
+[31m-[m
+[32m+[m[32m    var bannerHomeCenter=document.getElementById("bannerHomeCenter");[m[41m  [m
+[32m+[m[32m    var errMsg=ShowBanners.innerHTML="Atenção! Esta loja não possui banners cadastrados!";[m[41m  [m
+     if (window.matchMedia("(max-width: 767px)").matches){   [m
+         ShowBanners.innerHTML=banner6;[m
+         ShowBannTwo.innerHTML=banner7;[m
+         ShowBannThr.innerHTML=banner8;[m
+[32m+[m[32m        bannerHomeCenter.innerHTML=banner20;[m
+     }else{  [m
+        ShowBanners.innerHTML=banner1;[m
+        ShowBannTwo.innerHTML=banner2;[m
+        ShowBannThr.innerHTML=banner3;[m
+[31m-    }  [m
+[31m-  [m
+[32m+[m[32m       bannerHomeCenter.innerHTML=banner15;[m
+[32m+[m[32m    }[m[41m   [m
+[32m+[m[32m    }[m
+   }[m
+ [m
+   var sCurrentPage=document.location.href.toUpperCase();[m
+[36m@@ -639,29 +627,29 @@[m [mfunction ShowCartOnPage(IDLoja,iErr,sMsg,sCartText,sCheckoutText,este){[m
+ }[m
+ [m
+ // ZipCode - CEP[m
+[31m-function fnShowCEP(IDProd){[m
+[31m-  if(FC$.TypeFrt==3 || FC$.TypeFrt==4){[m
+[31m-    var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);[m
+[31m-    if(sNumCEP==null)sNumCEP="";[m
+[31m-    sCEP="<div id='idDivCEPFC'>";[m
+[31m-    sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete</span></div>";[m
+[31m-    sCEP+="  <div id='idDivContentCEP'>";[m
+[31m-    sCEP+="    <div id='idDivContentFieldsCEP'>";[m
+[31m-    sCEP+="      <div id='idDivCEPCalc'>";[m
+[31m-    sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";[m
+[31m-    sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";[m
+[31m-    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg?cccfc=1' height='29px' alt='Simular frete' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProd("+ IDProd +")'>";[m
+[31m-    sCEP+="      </div>";[m
+[31m-    sCEP+="    </div>";[m
+[31m-    sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";[m
+[31m-    sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";[m
+[31m-    sCEP+="  </div>";[m
+[31m-    if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";[m
+[31m-    sCEP+="</div>";[m
+[31m-    var oShowCEP=document.getElementById("ShowCEP"+IDProd);[m
+[31m-    if(oShowCEP)oShowCEP.innerHTML=sCEP;[m
+[31m-  }[m
+[31m-}[m
+[32m+[m[32m// function fnShowCEP(IDProd){[m
+[32m+[m[32m//   if(FC$.TypeFrt==3 || FC$.TypeFrt==4){[m
+[32m+[m[32m//     var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);[m
+[32m+[m[32m//     if(sNumCEP==null)sNumCEP="";[m
+[32m+[m[32m//     sCEP="<div id='idDivCEPFC'>";[m
+[32m+[m[32m//     sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete</span></div>";[m
+[32m+[m[32m//     sCEP+="  <div id='idDivContentCEP'>";[m
+[32m+[m[32m//     sCEP+="    <div id='idDivContentFieldsCEP'>";[m
+[32m+[m[32m//     sCEP+="      <div id='idDivCEPCalc'>";[m
+[32m+[m[32m//     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";[m
+[32m+[m[32m//     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";[m
+[32m+[m[32m//     // sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg alt='Simular frete' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProd("+ IDProd +")'>";[m
+[32m+[m[32m//     sCEP+="      </div>";[m
+[32m+[m[32m//     sCEP+="    </div>";[m
+[32m+[m[32m//     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";[m
+[32m+[m[32m//     sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";[m
+[32m+[m[32m//     sCEP+="  </div>";[m
+[32m+[m[32m//     if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";[m
+[32m+[m[32m//     sCEP+="</div>";[m
+[32m+[m[32m//     var oShowCEP=document.getElementById("ShowCEP"+IDProd);[m
+[32m+[m[32m//     if(oShowCEP)oShowCEP.innerHTML=sCEP;[m
+[32m+[m[32m//   }[m
+[32m+[m[32m// }[m
+ [m
+ function fnGetShippingValuesProd(IDProd){[m
+   sCEP=document.getElementById("idZip"+ IDProd).value;[m
+[36m@@ -902,7 +890,7 @@[m [mfunction fnShowCEPGrid(IDProd){[m
+     sCEP+="      <div id='idDivCEPCalc'>";[m
+     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";[m
+     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";[m
+[31m-    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg?cccfc=1' height='29px' id='idCEPButton' alt='Simular frete' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";[m
+[32m+[m[32m    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg'  id='idCEPButton' alt='Simular frete' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";[m
+     sCEP+="      </div>";[m
+     sCEP+="    </div>";[m
+     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' alt=' ' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";[m
+[1mdiff --git a/LojaSite.css b/LojaSite.css[m
+[1mindex 41e63e8..7b57f4e 100644[m
+[1m--- a/LojaSite.css[m
+[1m+++ b/LojaSite.css[m
+[36m@@ -23,7 +23,7 @@[m [minput[type="text"],input[type="number"]{padding:5px;background-image:none;color:[m
+ #idTxtProductShareFC{font-weight:400;font-size:14px;} [m
+ .FCProductShare .titulos{font-weight:700;font-size:18px;}[m
+ .FCProductAvailability .titulos{font-weight:700;font-size:18px;}[m
+[31m-.FCHelp #idFCContent,.FCNews #idFCContent,.FCContact #idFCContent,.FCTrack #idFCContent,.FCNewsletter #idFCContent,.FCRateProd #idFCContent,.FCAdvancedSearch #idFCContent{margin:0 10px 0 10px;} [m
+[32m+[m[32m.FCHelp #idFCContent,.FCNews #idFCContent,.FCContact #idFCContent,.FCTrack #idFCContnt,.FCNewsletter #idFCContent,.FCRateProd #idFCContent,.FCAdvancedSearch #idFCContent{margin:0 10px 0 10px;}[m[41m [m
+ #DivShowCartOnPage{margin-top:-105px!important;}[m
+ .FCToolBar{background:#ffffff;box-shadow:0 0 25px #e6e2e2;width:100%;height:60px;box-sizing:border-box;position:fixed;left:0;top:40px;z-index:9999;overflow:visible!important;display:none;}[m
+ .Titulos{font-weight:400;font-weight:bold;font-size:32px;text-decoration:none;line-height:66px;color: #0361a9;display:block;text-align: left; font-family:'Cabin',verdana,arial!important;}[m
+[36m@@ -40,7 +40,7 @@[m [ma.shop-list-action{display:flex;align-items:center;display:-webkit-flex;padding:[m
+ .InputText{color:#545B8F;}[m
+ [m
+ /* Remove LeftBar of certain pages */[m
+[31m-.FCHome .left-bar,.ProductDet .left-bar,.FCFreight .left-bar,.FCCheckoutSteps .left-bar,.FCPayment .left-bar,.FCContact .left-bar,.ProductDet #idDivPath,.ProductDet #idDivSearch,.ProductDet .Titulos,.ProductList .Titulos,.FCCart .left-bar,.FCRegister .left-bar,.FCNews .left-bar,.FCHelp .left-bar,.FCTrack .left-bar,.FCNewsletter .left-bar,.FCRecommend .left-bar,.FCAdvancedSearch .left-bar,.FCRateProd .left-bar,.DestaquesPage .left-bar,.FCCategories .left-bar, .ListadecompraPage .left-bar{display:none!important;}[m
+[32m+[m[32m.FCHome .left-bar,.ProductDet .left-bar,.FCFreight .left-bar,.FCCheckoutSteps .left-bar,.FCPayment .left-bar,.FCContact .left-bar,.ProductDet #idDivPath,.ProductDet #idDivSearch,.ProductDet .Titulos,.ProductList .Titulos,.FCCart .left-bar,.FCRegister .left-bar,.FCNews .left-bar,.FCHelp .left-bar,.FCTrack .left-bar,.FCNewsletter .left-bar,.FCRecommend .left-bar,.FCAdvancedSearch .left-bar,.FCRateProd .left-bar,.DestaquesPage .left-bar,.FCCategories .left-bar, .ListadecompraPage .left-bar,body.FCCustom.QuemsomosPage .left-bar{display:none!important;}[m
+ .ProductList #idFCContent{text-align:left;}[m
+ [m
+ /* Register Tables */[m
+[36m@@ -467,13 +467,18 @@[m [mbody.FCProduct.ProductList #idHeadFilters{width:100%;}[m
+ #idCheckoutFC a #idTxtLinkContinueFC{padding:10px;cursor:pointer;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;font-weight:bold;background-color:#6ea853;color:#FFFFFF;display: none;} [m
+ #idCheckoutFC a:hover #idTxtLinkContinueFC{padding:10px;cursor:pointer;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;font-weight:bold;background-color:#4c7738;color:#FFFFFF;}[m
+ #idCheckoutFC .BotChkPaymentContinue:hover{background-color:#4c7738;border-color:#333333;color:#FCFCFC;}[m
+[32m+[m[32m.FCCartItemProdImg{display:flex;flex-direction:column;padding:3px;margin-right: 5px;}[m
+ [m
+ /* Store.css */[m
+ #FCCartRightSubtotalPrice .FCCartSubtotalPriceLabel,#FCCartRightSubtotalPrice .FCCartSubtotalPriceValue{border-bottom:1px solid #e8e8e8!important;}[m
+ #FCCartRightWrap .FCCartWrapLabel,#FCCartRightWrap .FCCartWrapValue{border-top:0!important;}[m
+ #FCCartRightCupom{padding:5px!important;}[m
+[32m+[m[32m.buttonMyAcc,.EstButtonRateProd,.FCTrack #idRecoverOrderFC a{background:#1aad7d!important;}[m
+[32m+[m[32m.MyAccOptOn {border-left: 4px solid #0361a9!important;}[m
+[32m+[m[32m.FCDivOrdersList1NumMyAcc,.FCDivOrdersList2ValMyAcc{color: #0361a9 !important;}[m
+ [m
+ /* Cart */[m
+[32m+[m[32m.EstTxtErrField{display:inline-block;color:#ef018d;background:transparent;}[m
+ #FCCartRightSummary{background:#FFFFFF!important}[m
+ .FCCartRightCol{background:#FFFFFF;}[m
+ .FCCartContainer{position:relative;font-size:0.8em;}[m
+[36m@@ -482,8 +487,7 @@[m [mtable[name="TabEnvioInt"] td{vertical-align:middle;padding:5px 5px;}[m
+ #idTabRadioPagtoFC td{vertical-align:middle;padding:10px 5px;}[m
+ .InfoBanners{margin-top:45px!important;}[m
+ #idTDFreightSimulationFC .EstTabPedido td{padding:12px 5px 0 0;vertical-align:middle;}[m
+[31m-#idTDFreightSimulationFC #idBut{border-radius:3px;-webkit-border-radius:3px;-moz-border-border-radius:3px;border:none;padding:6px 5px;cursor:pointer;background-color:#33a1ff;color:#FFFFFF;}[m
+[31m-[m
+[32m+[m[32m#idTDFreightSimulationFC #idBut{border-radius:3px;-webkit-border-radius:3px;-moz-border-border-radius:3px;border:none;padding:6px 5px;cursor:pointer;background-color:#0361a9;color:#FFFFFF;position:relative;right:10px;}[m
+ /* Ajuda */[m
+ .FCHelp #idHelpFC p{line-height:24px;}[m
+ .FCHelp #idBotCartFC{display:none;}[m
+[36m@@ -732,7 +736,7 @@[m [mtable[name="TabEnvioInt"] td{vertical-align:middle;padding:5px 5px;}[m
+ .fc-DivGridImg-Small2{position:relative;left:0px;}[m
+ .ProductDet #idShareProd img{width:28px!important;height:28px!important;}[m
+ [m
+[31m-.FieldCEPBtn{margin:0 0 0 5px;height:40px!important;position:relative;left:-5px;}[m
+[32m+[m[32m.FieldCEPBtn{ display: flex;}[m
+ [m
+ /* ProductList */[m
+ .DivProductListImagemProd .DivProductList-fastview{height:45px;width:74%;}[m
+[36m@@ -796,7 +800,7 @@[m [mp.EstTitXML a{margin:15px auto;display:block;}[m
+ .FieldCEPQty{box-sizing:border-box;padding:0 0 0 5px;margin:0 5px 0 0; }[m
+ .FieldCEPQty input{margin:0 0 0 10px;border:0;width:54px;text-align:center;height:38px;    border: 1px solid #cacaca;border-radius: 3px}[m
+ .FieldCEPNum input{width:90px;height:40px;padding-left:10px;border-radius: 3px 0px 0px 3px}[m
+[31m-.FieldCEPBtn{height:30px;color:#FFFFFF;font-family:'Lato',verdana,arial;font-weight:700;cursor:pointer;background:#666666;    border-radius: 0px 3px 3px 0px;}[m
+[32m+[m[32m.FieldCEPBtn{border-radius: 0px 3px 3px 0px;border:1px solid #9e9e9e;border-right: 0}[m
+ .FieldCEPBtn,.FieldCEPQty,.FieldCEPNum{float:left;}[m
+ #idDivCEPCalc{margin:10px 0;background:#f8f8f8;height:50px;display:flex;align-items:center;padding:30px 5px;}[m
+ #idDivCEPButton button{background-color:#dedede;color:#555555;transition:background-color 0.2s ease;width:100%;border-radius:5px;-webkit-border-radius:5px;-moz-border-border-radius:5px;border:none;padding:10px 25px 10px 25px;cursor:pointer;font-family:'Lato',verdana,arial;font-weight:700;font-size:18px;}[m
+[36m@@ -826,8 +830,7 @@[m [ma.boxInteration img{transform:scale(1);transition:.3s}[m
+ a.boxInteration:hover img{transform:scale(1.2);transition:.3s}[m
+ body.FCProduct.ProductList .boxInteration{margin:15px auto 10px;}[m
+ ul.CatListFC{font-family:'Cabin',sans-serif;}[m
+[31m-ul.CatListFC li:first-child{font-weight:bold}[m
+[31m-.FCHelp #idFCContent,.FCNewsletter #idFCContent,.FCRecommend #idFCContent,.FCAdvancedSearch #idFCContent,.FCNews #idFCContent,.FCContact #idFCContent{margin:0 18%;}[m
+[32m+[m[32mul.CatListFC li:first-child{font-weight:bold}[m[41m [m
+ span#idTxtBotPreviousPageFC{display:none;}[m
+ table#idTabRegisterFC font,.EstNomeCampo{color:#ef018d;}[m
+ [m
+[36m@@ -836,16 +839,15 @@[m [mtable#idTabRegisterFC font,.EstNomeCampo{color:#ef018d;}[m
+ .btninteration span{cursor:pointer;display:inline-block;position:relative;transition:0.5s;}[m
+ .btninteration span:after{content:'\00bb';position:absolute;opacity:0;top:0;left:-8px;transition:0.5s;}[m
+ .btninteration:hover span{transform:translateX(25px);}[m
+[31m-.btninteration:hover span:after{opacity:1;left:-25px;}[m
+[32m+[m[32m.btninteration:hover span:after{opacity:1;left:-25px;}[m[41m [m
+ [m
+ /*FORMS*/[m
+ body.FCRegister .inputsContainer{display:flex;align-items:center;}[m
+ form label{margin:0px!important;width:auto!important}[m
+[31m-#FCFormContainer #Email{width:100%;max-width:80%;}[m
+[31m-#FCFormContainer label{white-space:nowrap;}[m
+[32m+[m[32m#FCFormContainer #Email{width:100%;max-width:80%;}[m[41m [m
+ td.smtext.FCPasswordInput{display:flex;align-items:center;}[m
+ input[type="radio"i]{margin:0px!important;}[m
+[31m-#FCFormContainer .EstRequiredField{color:#ef018d;font-weight:bold}[m
+[32m+[m[32m#FCFormContainer .EstRequiredField{color:#000000;font-weight:normal;}[m
+ [m
+ /*FLOAT BAR*/[m
+ .FCToolBar{padding:5px 0;}[m
+[36m@@ -871,13 +873,17 @@[m [ma.btnSearch{background:white;position:relative;height:45px;width:20%;border:1px[m
+ .zfTopBar span strong,svg{margin-right:5px;} [m
+ li#Header_SocialLogin_NamePosition,span#idImgGlobalSignFC{display:flex;align-items:center;font-size: 11px;color: #2e3192;}[m
+ [m
+[32m+[m[32m.container.FCAbout{max-width:800px;margin:0 auto;}[m
+[32m+[m[32m.About-Tittle{padding:10px;font-size:1rem;margin:50px 0 10px 0;background:#dedede;}[m
+[32m+[m[32m.contentBody p{color:#7d7d7d;}[m
+[32m+[m
+ /*SLIDE*/[m
+ .swiper-slide img {max-width:100%;min-width:100%;margin:0 auto;display: block;} [m
+ @media only screen and (max-width:640px){.MainContainer{padding:0 20px!important;}}[m
+ [m
+ /*TOPBRAND*/[m
+ .zfCartTop{display:flex;justify-content:flex-end;position:relative }[m
+[31m-.zfTopBrand{margin:20px auto}[m
+[32m+[m[32m.zfTopBrand{margin:30px auto}[m
+ .zfTopBrand .col-small-6 {padding:0px;margin:0}[m
+ .zfTopBrand .zfToplogo img {max-width: 90%;float:left;border-radius: 3px;transition:.3s;} [m
+ .zfToplogo img:hover{ transition:.3s;    box-shadow: 0px 0px 20px 0 #cbcbcb;	}[m
+[36m@@ -928,11 +934,13 @@[m [mh1#idNameProductGridFC{text-align:left;font-size:1.5em;margin:20px auto 5px;}[m
+ .ProdDet .prod-price{font-size:18px;margin:20px auto 0;text-align:left;}[m
+ .ProdDet .FCPriceOriSale span.FCPrice{display:block;color:#ababab!important;font-size: 15px;    text-decoration: line-through;}[m
+ .ProdDet .FCPriceOriSale .FCCurrencyLabel{ color:#ababab;font-size: 15px; }[m
+[31m-.FCPriceProd span.FCPrice{font-sizeze:36px;}[m
+[32m+[m[32m.FCPriceProd span.FCPrice{font-size:36px;}[m
+[32m+[m[32mdiv#idCEPoverlayFC{z-index: 9999!important;}[m
+[32m+[m[32mdiv#idFreightSimulationFC{z-index: 99999!important;}[m
+ .ProdDet .FCPriceSale .FCPrice,.ProdDet span.FCPriceProd,.ProdDet span.FCPrice{font-size:36px;color:#0361a9;font-weight:bold;margin:0 auto 10px;display:block;}[m
+ div#DivShowCartOnPage a{background:#e3037d;display:block;border-radius:10px;color:#fff!important;line-height:3;width:100%;}[m
+ #DivShowCartOnPage{border-radius:10px;padding:0px 5px;}[m
+[31m-div#DivShowCartOnPage tr td:nth-child(2) img{display:flex;background:#e0e0e0;align-items:center;position:relative;bottom:6.5em;left:13.4em;padding:4px;border-radius:10px;}[m
+[32m+[m[32mdiv#DivShowCartOnPage tr td:nth-child(2) img{display:flex;background:#e0e0e0;align-items:center;position:absolute;top:-6px;left:14.0em;padding:4px;border-radius:10px;}[m
+ td#idTDTitShowCartOnPageFC{background:transparent!important;color:#424242!important;border-radius:10px;}[m
+ div#DivShowCartOnPage tr{display:inline-grid;width:100%;}[m
+ .SocialProdLinks img,#idShareFooter img{transform:scale(1);transition:.3s}[m
+[36m@@ -942,10 +950,13 @@[m [mdiv#idBreadcrumb a:hover{text-decoration:underline;}[m
+ /*MENU*/[m
+ .baseMenu{background:#0361a9;padding:15px 0;}[m
+ span#MenuToggle{display:flex;align-items:center;color:#fff;text-transform:uppercase;cursor:pointer;}[m
+[31m-ul.contentMenu{position:fixed;top:0px;background:#efefef;left:-100%;width:250px;padding:40px 0px;height:100%;z-index:1000;transition:.3s;/*overflow-y: auto; overflow-x:hidden;*/}[m
+[31m-ul.contentMenu.on{left:0px;transition:.3s;}[m
+[32m+[m[32mul.contentMenu{position:fixed;top:0px;background:#efefef;left:-100%;width:100%;padding:40px 0px;height:100%;z-index:1000;transition:.3s;/*overflow-y: auto; overflow-x:hidden;*/}[m
+[32m+[m[32mul.contentMenu.on{left:0px;transition:.3s;overflow-x: hidden !important;}[m
+ .Menubreadcrumb{background:#dc0182;padding:15px 0;display:flex;position:absolute;justify-content:space-between;top:0;width:100%;transform:translateX(100%);visibility:hidden;height: 40px;}[m
+ .Menubreadcrumb a{color:#fff!important;}[m
+[32m+[m[32mi.iconNext svg{width:10px;height:10px;float:right;margin-right:20px;margin-top:5px;}[m
+[32m+[m[32mi.iconNext{display:inline;}[m
+[32m+[m[32mspan#nameOpt a {padding:0;}[m
+ [m
+ /*INTERAÃ‡ÃƒO MENU*/[m
+ .MenuSLideOpenSub{transition:.3s;transform:translateX(-330px);}[m
+[36m@@ -1000,8 +1011,7 @@[m [miframe#Disp{padding:0!important;}[m
+ .vex-content iframe{max-height:100%;height:100%;}[m
+ #idDivGridImg a.MagicZoomPlus{border:1px solid #ebebeb;padding: 3px;border-radius: 3px}[m
+ #idDivGridImg a .ZoomIMG2{border:1px solid #ebebeb;margin:0px;padding: 3px;border-radius: 3px}[m
+[31m-[m
+[31m-[m
+[32m+[m[41m  [m
+ /* POPNEWS */[m
+ #FullBackground{position: fixed; min-width: 100%; min-height: 100%; background: #000; z-index: 99999999; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; opacity: 0.55; } [m
+ #popupNews h1{color:#0574c9; top:0px; left:2px;}[m
+[36m@@ -1030,8 +1040,7 @@[m [minput[type="email"]{background:#fff;border-radius:2px;padding:5px 5px;width:210p[m
+ .FCCartContainer {max-width: 100%;}[m
+ .FCCartRecalculate button:hover, .FCCartStillShopping button:hover,#FCCartFreightSimulationBut:hover{background: #797979;font-family:'Cabin',sans-serif!important;}[m
+ .FCCartRecalculate button, .FCCartStillShopping button,#FCCartFreightSimulationBut{background: #a3a3a3;font-family:'Cabin',sans-serif!important;font-size: 17px !important;}[m
+[31m-[m
+[31m-[m
+[32m+[m[41m [m
+ /*FOOTER*/[m
+ .FooterMainBarFC{background:#000000;padding-bottom:15px}[m
+ ul.flx.security{justify-content:space-around;background:#fff;border-radius:5px;padding:5px;margin:10px auto;flex-wrap: wrap;}[m
+[36m@@ -1043,18 +1052,14 @@[m [mul.payment.flx li{padding:4px 0!important;}[m
+ [m
+ /*SUBPAGES*/[m
+ span#idTxtLinkCatFC a{background:#ef018d;color:#fff;border-radius:5px;padding:0 5px;}[m
+[31m-[m
+[31m-[m
+[32m+[m[41m [m
+ @media(max-width:767px) {[m
+ .shop-list{display:none}[m
+ .ClassShowCEP{margin:13px auto;padding:20px 0;}[m
+ [m
+ /*MENU*/[m
+[31m-.contentMenu li ul{width:100%;}[m
+[31m-[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[32m+[m[32m.contentMenu li ul{width:100%;}[m[41m [m
+[32m+[m[32m}[m[41m  [m
+ [m
+ @media(max-width:641px){[m
+ .hidden-xs{display:none!important;}[m
+[36m@@ -1066,7 +1071,7 @@[m [mul.contentMenu{width:100%;}[m
+ [class*=col-small-]{padding:0!important;}[m
+ .FCHome .ShowBanner{display:block;margin-bottom:20px;}[m
+ .ShowBanner.last.primary{padding:30px 15px 5px;}[m
+[31m-[m
+[32m+[m[32ma.help{color:#757575;font-weight:bold;margin:10px auto 0;display:block;}[m
+ /*MENU*/[m
+ div#MenuClose svg{fill:#000} [m
+ [m
+[36m@@ -1076,7 +1081,7 @@[m [mdiv#MenuClose svg{fill:#000}[m
+ .col-small-12.col-medium-6.col-large-7.col-xlarge-6.three{width:60%;}[m
+ }[m
+ @media(min-width: 641px){ [m
+[31m-[m
+[32m+[m[32m.FCHelp #idFCContent,.FCNewsletter #idFCContent,.FCRecommend #idFCContent,.FCAdvancedSearch #idFCContent,.FCNews #idFCContent,.FCContact #idFCContent{margin:0 18%;}[m
+ .zfTopBrand .row{display:flex;}[m
+ .one{order:1;}[m
+ .two{order:3;}[m
+[36m@@ -1185,7 +1190,7 @@[m [mspan.CatsMoreSubs {position:relative;display:flex;background:transparent;padding[m
+ /*========================================*/[m
+ ul.subList{top:50px!important;display:block;visibility:visible;-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);transform-origin:top center;-webkit-transform-origin:top center;-ms-transform-origin:top center;transition:all 0.4s ease 0s;-webkit-transition:all 0.4s ease 0s;-o-transition:all 0.4s ease 0s}[m
+ li.MegaMenu-right ul.subList {right: 0; left: inherit;}[m
+[31m- [m
+[32m+[m[32mi.iconNext{display:none}[m
+ [m
+ @media(min-width:1366px){  [m
+ .swiper-container-banners.swiper-container-horizontal{max-width:1366px; margin:0 auto;}[m
+[1mdiff --git a/PedBarraTopo.htm b/PedBarraTopo.htm[m
+[1mindex 9c42342..d533291 100644[m
+[1m--- a/PedBarraTopo.htm[m
+[1m+++ b/PedBarraTopo.htm[m
+[36m@@ -1,13 +1,14 @@[m
+[31m-<link rel="stylesheet" href="<PathTo file="htm/checkout.css">"><script src="<PathTo file="htm/lojalib.js">"></script>[m
+[32m+[m[32m<link rel="stylesheet" href="<PathTo file="htm/checkout.css">">[m
+[32m+[m[32m<script src="<PathTo file="htm/lojalib.js">"></script>[m
+ <div class="header-ped-line"></div>[m
+ <!-- Logo -->[m
+ <div class="row">[m
+   <div class="MainContainer">[m
+[31m-    <div class="col-small-7 col-medium-7 col-large-7 col-mlarge-7 col-xlarge-7 text-right">[m
+[31m-      <a href="<StoreDomain>"><img alt="<NomeLoja>" title="<NomeLoja>" src="<PathTo file="images/logotopo.svg">" class="HeaderLogo"></a>[m
+[32m+[m[32m    <div class="col-small-10 col-medium-7 col-large-7 col-mlarge-7 col-xlarge-7 text-right">[m
+[32m+[m[32m      <a href="<StoreDomain>"><img alt="<NomeLoja>" title="<NomeLoja>" src="<PathTo file="images/logo-criar-e-faturar.svg">" class="HeaderLogo"></a>[m
+     </div>[m
+[31m-      <div class="col-small-2 col-medium-2 col-large-2 col-mlarge-2 col-xlarge-5 text-right">[m
+[31m- 				<a class="help" title="Ajuda da loja" href="/ajuda.asp?idloja=<IDLoja>"><span class="ic_help">?</span>Ajuda</a>[m
+[32m+[m[32m    <div class="col-small-8 col-medium-2 col-large-2 col-mlarge-2 col-xlarge-5 text-right">[m
+[32m+[m[32m      <a class="help" title="Ajuda da loja" href="/ajuda.asp?idloja=<IDLoja>"><span class="ic_help">?</span>Ajuda</a>[m
+     </div>[m
+   </div>[m
+ </div>[m
+[1mdiff --git a/PedRodape.htm b/PedRodape.htm[m
+[1mindex db25ae3..b79ca7a 100644[m
+[1m--- a/PedRodape.htm[m
+[1m+++ b/PedRodape.htm[m
+[36m@@ -1,85 +1,51 @@[m
+ <IncludeTagged src="lojaestilos.css" async>[m
+[31m-<!-- Begin: PedFooter -->[m
+[31m-  [m
+[31m- <div class="PadRodapeFC">[m
+[31m-<style>[m
+[31m-[m
+[31m-  /*BUILD FOOTER REATIVE POSITION*/[m
+[31m-/*html {[m
+[31m-  height:100%;[m
+[31m-  width:100%;[m
+[31m-}[m
+[31m-body {[m
+[31m-  height:100%;[m
+[31m-  width:100%;[m
+[31m-  display:table;[m
+[31m-  table-layout:fixed;[m
+[31m-  margin:0px auto; [m
+[31m-  font-family: 'Maven Pro';[m
+[31m-  width: 80%;    [m
+[31m-  text-transform:uppercase;[m
+[31m-  background:#46008c;[m
+[31m-  }[m
+[31m-.row {[m
+[31m-    display:table-row;[m
+[31m-    background:#ffce0a[m
+[31m-}[m
+[31m-.teste{[m
+[31m-  width:240px;[m
+[31m-   background:#804fd8;[m
+[31m-  margin:0 5px;[m
+[31m-}[m
+[31m-div.row {[m
+[31m-    height:100%;[m
+[31m-    background:#fff[m
+[31m-}*/[m
+[31m-[m
+[31m-[m
+[31m-.PadRodapeFC{padding: 30px;}[m
+[31m-.title-footer {color: #fff; margin: 10px auto; display: inline-block;text-transform: uppercase;}[m
+[31m-.PadRodapeFC{background:#000;}[m
+[31m-ul.payment.flx {min-width: 70%;    }[m
+[31m-ul.flx.security{min-width: 50%;float: none;justify-content: space-between;margin: 0}[m
+[31m-span.ic_help{background:#0361a9;border-radius:50px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-right:10px;}[m
+[31m-a.help{color:#757575; font-weight: bold}[m
+[31m-</style>[m
+[31m- <div class="MainContainer"> [m
+[31m-  <div class="row"> [m
+[31m-[m
+[31m-    <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">[m
+[31m-      <span class="title-footer font-bold">Pagamentos</span>[m
+[32m+[m[32m<!-- Begin: PedFooter -->[m[41m [m
+[32m+[m[32m<div class="PadRodapeFC">[m
+[32m+[m[32m  <style>[m[41m [m
+[32m+[m[32m    .PadRodapeFC{padding: 30px;}[m
+[32m+[m[32m    .title-footer {color: #fff; margin: 10px auto; display: inline-block;text-transform: uppercase;}[m
+[32m+[m[32m    .PadRodapeFC{background:#000;}[m
+[32m+[m[32m    ul.payment.flx {min-width: 70%;    }[m
+[32m+[m[32m    ul.flx.security{min-width: 50%;float: none;justify-content: space-between;margin: 0}[m
+[32m+[m[32m    span.ic_help{background:#0361a9;border-radius:50px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-right:10px;}[m
+[32m+[m[32m    a.help{color:#757575; font-weight: bold}[m
+[32m+[m[32m  </style>[m
+[32m+[m[32m  <div class="MainContainer">[m
+[32m+[m[32m    <div class="row">[m
+[32m+[m[32m      <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">[m
+[32m+[m[32m        <span class="title-footer font-bold">Pagamentos</span>[m
+         <ul class="payment flx">[m
+           <li><img src="<PathTo file="images/ic_mastercard.svg">" width="50" height="32" alt="MasterCard"></li>[m
+[31m-          <li><img src="<PathTo file="images/ic_visa.svg">" width="50" height="32" alt="Visa"></li> [m
+[31m-          <li><img src="<PathTo file="images/ic_bradesco.svg">" width="50" height="32" alt="Bradesco"></li> [m
+[32m+[m[32m          <li><img src="<PathTo file="images/ic_visa.svg">" width="50" height="32" alt="Visa"></li>[m
+[32m+[m[32m          <li><img src="<PathTo file="images/ic_bradesco.svg">" width="50" height="32" alt="Bradesco"></li>[m
+           <li><img src="<PathTo file="images/ic_amex.svg">" width="50" height="32" alt="Amex"></li>[m
+           <li><img src="<PathTo file="images/ic_diners.svg">" width="50" height="32" alt="Diners"></li>[m
+[31m-          <li><img src="<PathTo file="images/ic_itau.svg">" width="50" height="32" alt="Itau"></li> [m
+[31m-          <li><img src="<PathTo file="images/ic_uol.svg">" width="50" height="32" alt="uol"></li>   [m
+[31m-          <li><img src="<PathTo file="images/ic_boleto.svg">" width="50" height="32" alt="boleto"></li> [m
+[32m+[m[32m          <li><img src="<PathTo file="images/ic_itau.svg">" width="50" height="32" alt="Itau"></li>[m
+[32m+[m[32m          <li><img src="<PathTo file="images/ic_uol.svg">" width="50" height="32" alt="uol"></li>[m
+[32m+[m[32m          <li><img src="<PathTo file="images/ic_boleto.svg">" width="50" height="32" alt="boleto"></li>[m
+         </ul>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">[m
+[32m+[m[32m        <span class="title-footer font-bold">Segurança</span>[m
+[32m+[m[32m        <ul class="security flx">[m
+[32m+[m[32m          <a href="/ajuda.asp?idloja=<IDLojaNum>#Seguranca"><img src="/images/100_https.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>[m
+[32m+[m[32m          <img src="/images/LetsEncrypt.svg?cccfc=1" height=50 alt="Seu pedido com Segurança" title="Site Seguro">[m
+[32m+[m[32m          <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=<StoreDomain>" target="_blank" rel="noopener"><img src="/images/Google_Loja_Segura.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>[m
+[32m+[m[32m        </ul>[m
+[32m+[m[32m      </div>[m
+     </div>[m
+[31m-    <div class="col-small-12 col-medium-6 col-large-6 col-mlarge-6 col-xlarge-6 text-left">[m
+[31m-    <span class="title-footer font-bold">Segurança</span>[m
+[31m-       <ul class="security flx">[m
+[31m-         <a href="/ajuda.asp?idloja=<IDLojaNum>#Seguranca"><img src="/images/100_https.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>[m
+[31m-         <img src="/images/LetsEncrypt.svg?cccfc=1" height=50 alt="Seu pedido com Segurança" title="Site Seguro">[m
+[31m-         <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=<StoreDomain>" target="_blank" rel="noopener"><img src="/images/Google_Loja_Segura.svg?cccfc=1" height="50" alt="Seu pedido com Segurança" title="Site Seguro"></a>[m
+[31m-       </ul>[m
+[31m-    </div> [m
+[31m- </div>[m
+[31m- </div>[m
+   </div>[m
+[32m+[m[32m</div>[m
+ <script>  [m
+[31m-WebFontConfig = {[m
+[31m-  google:{families:['Lato:400,700']}[m
+[31m-};[m
+[31m-(function() {[m
+[31m-  var wf = document.createElement('script');[m
+[31m-  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';[m
+[31m-  wf.type = 'text/javascript';[m
+[31m-  wf.async = 'true';[m
+[31m-  var s = document.getElementsByTagName('script')[0];[m
+[31m-  s.parentNode.insertBefore(wf, s);[m
+[31m-})(); [m
+[32m+[m[32m  WebFontConfig = {[m
+[32m+[m[32m    google:{families:['Lato:400,700']}[m
+[32m+[m[32m  };[m
+[32m+[m[32m  (function() {[m
+[32m+[m[32m    var wf = document.createElement('script');[m
+[32m+[m[32m    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';[m
+[32m+[m[32m    wf.type = 'text/javascript';[m
+[32m+[m[32m    wf.async = 'true';[m
+[32m+[m[32m    var s = document.getElementsByTagName('script')[0];[m
+[32m+[m[32m    s.parentNode.insertBefore(wf, s);[m
+[32m+[m[32m  })();[m[41m [m
+ </script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Rodape.htm b/Rodape.htm[m
+[1mindex 670f21d..29749f8 100644[m
+[1m--- a/Rodape.htm[m
+[1m+++ b/Rodape.htm[m
+[36m@@ -64,27 +64,27 @@[m
+       <div class="col-small-12 col-medium-4 col-large-3 col-xlarge-2">[m
+         <span class="title-footer font-bold">INSTITUCIONAL</span>[m
+         <ul>[m
+[31m-          <li><a class="btninteration" href="/"><span>Quem Somos</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/quem-somos"><span>Quem Somos</span></a></li>[m
+           <li><a class="btninteration" href="/prod,idloja,<IDLojaNum>,promocao,1,ofertas.htm"><span>Nossas Lojas</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/prod,idloja,<IDLojaNum>,lancamento,1,novidades.htm"><span>Politica de Privacidade</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/page,idloja,<IDLojaNum>,arq,destaques.htm"><span>Politica de Segurança</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLoja>"><span>Politica de Privacidade</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLoja>"><span>Politica de Segurança</span></a></li>[m
+         </ul>[m
+       </div>[m
+       <div class="col-small-12 col-medium-4 col-large-3 col-xlarge-2">[m
+         <span class="title-footer font-bold"><span>Dúvidas</span></span>[m
+         <ul>[m
+[31m-          <li><a class="btninteration" href="/addProduto.asp?idloja=<IDLojaNum>"><span>Entregas</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/account.asp?idloja=<IDLojaNum>&orders=1#Orders"><span>Pagamentos</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/account.asp?idloja=<IDLojaNum>&register=1#Register"><span>Trocas e Devoluções</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/newsletter.asp?idloja=<IDLojaNum>"><span>Outras Dúvidas</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLoja>"><span>Entregas</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLoja>"><span>Pagamentos</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLoja>"><span>Trocas e Devoluções</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href=""><span>Outras Dúvidas</span></a></li>[m
+         </ul>[m
+       </div>[m
+       <div class="col-small-12 col-medium-4 col-large-3 col-xlarge-2 three">[m
+         <span class="title-footer font-bold">Serviço</span>[m
+         <ul>[m
+[31m-          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLojaNum>"><span>Meu Cadastro</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/noticias.asp?idloja=<IDLojaNum>"><span>Meus Pedidos</span></a></li>[m
+[31m-          <li><a class="btninteration" href="/ajuda.asp?idloja=<IDLojaNum>#Entregas"><span>Minha Sacola</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/cadastro.asp?idloja=<IDLoja>"><span>Meu Cadastro</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/track.asp?idloja=<IDLoja>"><span>Meus Pedidos</span></a></li>[m
+[32m+[m[32m          <li><a class="btninteration" href="/addproduto.asp?idloja=<IDLoja>"><span>Minha Sacola</span></a></li>[m
+           <li><a class="btninteration" href="/faleconosco.asp?idloja=<IDLoja>"><span>Fale Conosco</span></a></li>[m
+         </ul>[m
+       </div>[m
+[36m@@ -145,11 +145,15 @@[m
+       <div class="col-small-12 col-medium-3 col-large-2 col-xlarge-2 has-text-right"><a class="FastC" href="https://www.fastcommerce.com.br/home.asp?origem=tecfc&utm_source=Lojas+Fastcommerce&utm_medium=Selo&utm_campaign=Tecnologia+Fastcommerce" target="_blank" rel="noopener">Powered by &nbsp <img src="<Baseloja>images/Fastcommerce.svg"></a></div>[m
+     </div>[m
+   </div>[m
+[31m-</div>[m
+[32m+[m[32m</div>[m[41m [m
+[32m+[m
+[32m+[m[32m<script type="text/javascript"> sF$.MediaQuery( "<banner 1>", "<banner 2>","<banner 3>","<banner 4>","<banner 5>","<banner 6>","<banner 7>","<banner 8>","<banner 9>","<banner 10>","<banner 15>","<banner 20>");</script>[m[41m [m
+[32m+[m
+ <script> [m
+   fnFooter(); [m
+   FCLib$.onReady(FCLib$.execWaveInterchange); [m
+ </script>[m
+ <script>FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');</script>[m
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" defer></script>[m
+[32m+[m[32m<script src='<PathTo file="htm/js/autosuggesttbar.js">'></script>[m
+ <script src='<PathTo file="htm/js/autosuggest.js">' defer></script>[m
+\ No newline at end of file[m
+[1mdiff --git a/amhbarratopo.htm b/amhbarratopo.htm[m
+[1mindex f76b138..62a9959 100644[m
+[1m--- a/amhbarratopo.htm[m
+[1m+++ b/amhbarratopo.htm[m
+[36m@@ -4,7 +4,7 @@[m
+     <span>[m
+       <div>[m
+         <strong>[m
+[31m-          <amp-img layout="fixed" width="30" height="20" src="<PathTo file="images/ic_phone.svg">"></amp-img>[m
+[32m+[m[32m          <amp-img layout="fixed" alt="Contato-Telefone" width="30" height="20" src="<PathTo file="images/contato-telefone-criar-faturar.svg ">"></amp-img>[m
+           SAC:[m
+         </strong>[m
+         (11) 2883-5091 [m
+[36m@@ -14,7 +14,7 @@[m
+     <span>[m
+       <div>[m
+         <strong>[m
+[31m-          <amp-img layout="fixed" width="30" height="20" src="<PathTo file="images/ic_whatsapp.svg">"></amp-img>[m
+[32m+[m[32m          <amp-img layout="fixed" alt="Contato-Whatsapp" width="30" height="20" src="<PathTo file="images/contato-whatsapp-criar-faturar.svg">"></amp-img>[m
+           Whatsapp:[m
+         </strong>[m
+         (11) 97041-1835[m
+[36m@@ -38,7 +38,7 @@[m
+     <PathAMP url="/home.asp?idloja=<IDLoja>">[m
+     ">Home</amp-img></a> [m
+     <a href="[m
+[31m-    <PathAMP url="/account.asp?idloja=<IDLoja>&orders=1#Orders">[m
+[32m+[m[32m    <PathAMP url="/track.asp?idloja=<IDLoja>">[m
+     ">Meus Pedidos</amp-img></a>[m
+     <a href="[m
+     <PathAMP url="/addProduto.asp?idloja=<IDLojaNum>">[m
+[36m@@ -61,19 +61,19 @@[m
+       <!-- LOGO -->[m
+       <div class=amp-header-logo>[m
+         <a href="<PathAMP url="/">">[m
+[31m-          <amp-img layout="fill" src="<PathTo file="images/logotopo.svg">"></amp-img>[m
+[32m+[m[32m          <amp-img layout="fill" alt="Logo Marca Criar & Faturar" src="<PathTo file="images/logo-criar-e-faturar.svg">"></amp-img>[m
+         </a>[m
+       </div>[m
+       <!-- LOGO -->[m
+       <div>[m
+         <div class="userData">  [m
+[31m-          <a href="/account.asp?idloja=10604&orders=1#Orders"><amp-img  layout="responsive" width="10"  height="10" src="<PathTo file="images/ic_user1.svg">"></amp-img></a> &nbsp[m
+[31m-          <a href="/account.asp?idloja=10604&orders=1#Orders"><amp-img  layout="responsive"   width="10"  height="10" src="<PathTo file="images/ic_pedidos1.svg">"></amp-img></a> [m
+[32m+[m[32m          <a href="/account.asp?idloja=<IDLoja>"><amp-img layout="responsive" width="10" height="10" alt="Minha Conta" src="<PathTo file="images/minhaconta.svg">"></amp-img></a> &nbsp[m
+[32m+[m[32m          <a href="/track.asp?idloja=<IDLoja>"><amp-img layout="responsive" width="10" height="10" alt="LogoMarca Criar & Faturar" src="<PathTo file="images/meus-pedidos.svg">"></amp-img></a>[m[41m [m
+         </div>[m
+         <!-- CARRINHO -->[m
+         <div class="amp-header-cart">[m
+           <a href="/AddProduto.asp">[m
+[31m-            <amp-img layout="fill" src="<PathTo file="images/iconshopcart.svg">"></amp-img>[m
+[32m+[m[32m            <amp-img layout="fill" alt="Carrinho de Compras" src="<PathTo file="images/iconshopcart.svg">"></amp-img>[m
+           </a>[m
+         </div>[m
+       </div>[m
+[36m@@ -87,14 +87,14 @@[m
+         <input type="hidden" name="useamp" value="true">[m
+         <input type="text" value="<SearchText>" name="Texto" class="InputTextBusca amp-search-input" placeholder="Encontre aqui o seu produto">[m
+         <button type="submit" class="amp-search-btn">[m
+[31m-          <amp-img src="<BaseLoja>images/iconsearch.svg" width="25" height="25" title="Buscar"></amp-img>[m
+[32m+[m[32m          <amp-img alt="Buscar na produtos" src="<BaseLoja>images/iconsearch.svg" width="25" height="25" title="Buscar"></amp-img>[m
+         </button>[m
+       </form>[m
+     </div>[m
+     <!-- BUSCA -->[m
+     <div class="amp-advanced-search">[m
+       <span> [m
+[31m-        <amp-img  layout="responsive" width="15" height="15" src="/icons/GoogleV1/svg/ic_play_arrow_24px.svg">[m
+[32m+[m[32m        <amp-img layout="responsive" width="15" height="15" src="/icons/GoogleV1/svg/ic_play_arrow_24px.svg">[m
+       </span>[m
+       <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a>[m
+     </div>[m
+[36m@@ -104,8 +104,9 @@[m
+ <div class="baseMenu">[m
+   <div class="container">[m
+     <button on='tap:sidebar.toggle' class="amp-sidebar-btn">[m
+[31m-      <amp-img layout="fill" src="<PathTo file="images/menu.svg">"></amp-img>[m
+[32m+[m[32m      <amp-img layout="fill" alt="Menu Loja Criar" src="<PathTo file="images/menu.svg">"></amp-img>[m
+     </button>[m
+[32m+[m[32m    <span>Menu</span>[m
+   </div>[m
+ </div>[m
+ <div class="line-brand"></div>[m
+[1mdiff --git a/amhestiloprodutoout.htm b/amhestiloprodutoout.htm[m
+[1mindex d449e6c..1d8d6de 100644[m
+[1m--- a/amhestiloprodutoout.htm[m
+[1m+++ b/amhestiloprodutoout.htm[m
+[36m@@ -17,7 +17,7 @@[m
+       <div>[m
+         <div class="DivHomePriceProd"> [m
+           <a class="boxInteration"> [m
+[31m-            <amp-img  layout="responsive"  width="20"  height="20" src="<PathTo file="images/bt_mais.png">"></amp-img>[m
+[32m+[m[32m            <amp-img layout="fixed"  width="20"  height="20" src="<PathTo file="images/bt_mais.png">"></amp-img>[m[41m  [m
+             <button class="bt details"> Veja Mais</button>  [m
+           </a>[m
+         </div>[m
+[1mdiff --git a/amhheader.htm b/amhheader.htm[m
+[1mindex 14ca59d..1223482 100644[m
+[1m--- a/amhheader.htm[m
+[1m+++ b/amhheader.htm[m
+[36m@@ -7,20 +7,24 @@[m
+ <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>[m
+ <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>[m
+ <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>[m
+[31m-<!-- <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script> -->[m
+[32m+[m[32m<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>[m
+ [m
+ <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">[m
+ <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>[m
+[31m-[m
+ <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">[m
+[32m+[m
+ <style amp-custom>[m
+[32m+[m[32m*{ box-sizing: border-box;}[m
+ html{font-size: 16px;}[m
+ body{font-family: "Cabin",sans-serif;background-color:#efefef;outline-color: #0361a9}[m
+[32m+[m[32ma{ text-decoration: none;}[m
+[32m+[m[32mbutton{background-color:transparent;border:0;}[m
+[32m+[m[32mli{list-style:none;}[m
+ header{background-color: #ffffff;max-width: 600px; margin: 0px auto 0; padding-bottom: 10px;}[m
+ footer,section{max-width: 600px; margin:0 auto;}[m
+ footer{background-color: #000000;}[m
+[31m-section{background-color: #fff;}[m
+[31m-[m
+[32m+[m[32msection{background-color: #fff;}[m[41m [m
+[32m+[m[41m [m
+ /* CRIAR E FATURAR */[m
+ .zfTopBar { max-width:600px; margin:0 auto;background: #000; color: #fff; padding: 10px; text-align: center; text-transform: uppercase; position: relative; }[m
+ .zfTopBar-Content span { display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; justify-content: center; }[m
+[36m@@ -30,22 +34,22 @@[m [msection{background-color: #fff;}[m
+ .zfTopBar span strong { color: #f5b514; margin-left: 5px; }[m
+ .zfTopBar span { font-size: 12px; }[m
+ .zfTopBar span:last-child { display: inline-flex; align-items: center; justify-content: center; margin: 10px auto 0; }[m
+[31m-.amp-advanced-search span{display:flex;align-items:center}[m
+[32m+[m[32m.amp-advanced-search span{display:flex;align-items:center}[m[41m  [m
+ [m
+[31m-/* BARRATOPO */[m
+[31m- [m
+[32m+[m[32m/* BARRATOPO */[m[41m [m
+ .amp-header-container div:last-child{display:flex;align-items: center;}[m
+     [m
+ /* MENU */ [m
+ .baseMenu{background:#0361a9;padding:15px 0;max-width:600px;margin:0 auto}[m
+[32m+[m[32m.baseMenu .container{display:flex;align-items:center;color:white; }[m
+[32m+[m[32m.baseMenu span{margin-left: 10px;text-transform:uppercase;}[m
+ .bt{background:transparent;border:0px;text-transform:uppercase;color:#ef018d;font-weight:bold;cursor:pointer;}[m
+ [m
+ /*PRODOUT*/[m
+ .boxInteration{display:flex;align-items:center;justify-content:center;margin:15px auto 0;cursor:pointer;}[m
+ [m
+ /*PRODDET*/[m
+[31m-div#TabTitProd{padding:10px;}[m
+[31m-[m
+[32m+[m[32mdiv#TabTitProd{padding:10px;}[m[41m [m
+ [m
+ /*FOOTER*/[m
+ section.ShowBannerSection{padding:20px;}[m
+[36m@@ -56,6 +60,7 @@[m [msection.ShowBannerSection{padding:20px;}[m
+ .ShowBanner .content{margin:25px auto;text-align:left;color:#fff;}[m
+ .ShowBanner .content span{line-height:1.3;}[m
+ .ShowBanner .content a{color:#fff;font-weight:bold;text-decoration:underline;}[m
+[32m+[m
+ /* CRIAR E FATURAR */  [m
+ [m
+ /* BARRATOPO */[m
+[36m@@ -63,13 +68,12 @@[m [mamp-accordion>section>:first-child{cursor:pointer;background-color:#000000;paddi[m
+ input,form{outline-color:#ff87c8}[m
+ .Prodout-tittle{max-width:270px;text-align:center;margin:auto;}[m
+ .Prodout-tittle img{width:100%}[m
+[31m-.Prodout-tittle h3{text-transform:uppercase;font-size:1.2em;font-size:1.5em;border-bottom:2px solid #f2008d;color:#0361a9;display:inline;}[m
+[31m-nav.amp-nav a{color:#444444;text-transform:uppercase;}[m
+[31m- [m
+[32m+[m[32m.Prodout-tittle h3,.Prodout-tittle h3 a{text-transform:uppercase;font-size:1.2em;font-size:1.2em;color:#0361a9;display:inline;}[m
+[32m+[m[32m.Prodout-tittle h3{border-bottom:2px solid #f2008d;}[m
+[32m+[m[32mnav.amp-nav a{color:#444444;text-transform:uppercase;}[m[41m [m
+ body.FCProduct.ProductDet .Amp-News{padding:10px 0;}[m
+ footer nav.amp-nav a{color:#ffffff;border-bottom:1px solid #4c4b4b;}[m
+ footer nav.amp-nav a:visited{color:#ffffff;}[m
+[31m-nav.amp-nav a:before { content: '';  background-image: url("<PathTo file="images/seta.svg">");  background-color: transparent;  width: 10px; background-repeat: no-repeat;  height: 10px; margin: 0px -10px; position: absolute;}[m
+ .amp-home-descr{text-align:center;text-transform:uppercase;font-weight:bold;font-size:0.9em;margin:5px 15px;}[m
+ section.amp-accordion a:before{margin:10px -9px;}[m
+ .amp-home-banners-img{margin:0 auto;display:flex;display:-webkit-flex;display:-ms-flex;}[m
+[36m@@ -78,8 +82,7 @@[m [msection.amp-accordion a:before{margin:10px -9px;}[m
+ .Bar-top section div{background:#424242;}[m
+ .amp-home-section.categories .amp-carousel-button.amp-carousel-button{display:none;}[m
+ .amp-home-section.recomend .amp-carousel-button.amp-carousel-button{display:none;}[m
+[31m-.amp-header-btn span{color:#fff;position:relative;bottom:8px;right:6px;}[m
+[31m-/* BARRATOPO */[m
+[32m+[m[32m.amp-header-btn span{color:#fff;position:relative;bottom:8px;right:6px;}[m[41m [m
+  [m
+ ::-webkit-input-placeholder{ /* Chrome/Opera/Safari */font-size:16px;font-family:'Cabin',sans-serif;color:#000;}[m
+ ::-moz-placeholder{ /* Firefox 19+ */font-size:16px;font-family:'Cabin',sans-serif;color:#000;}[m
+[36m@@ -101,16 +104,9 @@[m [msection.amp-accordion a:before{margin:10px -9px;}[m
+ footer .amp-cats-accordion {background: #000000;}[m
+ /* RODAPE */[m
+  [m
+[31m-@media (min-width:500px) {.Help-Answers { max-width: 750px } .Answer span.foco { top: -70px }}[m
+[32m+[m[32m@media (min-width:500px) {.Help-Answers { max-width: 750px } .Answer span.foco {top: -70px}}[m
+ [m
+[31m-/* Ajuda */[m
+[31m-[m
+[31m-/* Atração Styles */[m
+[31m-*{ box-sizing: border-box;}[m
+[31m-a{ text-decoration: none;}[m
+[31m-button{ background-color: transparent;  border: 0;}[m
+[31m-li{list-style: none;}[m
+[31m- [m
+[32m+[m[32m/* Ajuda */[m[41m  [m
+ .FCHome .amp-main, .AmhhighlightsPage .amp-main{padding-left: 0;padding-right: 0;}[m
+ .NotaOpiniaoVazio{width:20px;height:20px;background-image:url('<PathTo file="images/amp-star-empty.svg">'); background-size: 100%;background-repeat: no-repeat;}[m
+ .NotaOpiniaoMeio{width:20px;height:20px;background-image:url('<PathTo file="images/amp-star-half.svg">'); background-size: 100%;background-repeat: no-repeat;}[m
+[36m@@ -154,7 +150,7 @@[m [mamp-sidebar { width: 250px; padding-right: 10px; }[m
+ footer .amp-nav > a:nth-of-type(1){border-top:0px solid #ccc;}[m
+ section[expanded] .show-more{display:none;}[m
+ section:not([expanded]) .show-less{display:none;}[m
+[31m-.nested-accordion h4{font-size:14px;background-color:#ddd;outline:red}[m
+[32m+[m[32m.nested-accordion h4{font-size:14px;background-color:#ddd;}[m
+ .amp-accordion-title{width:100%;padding:10px 20px;border:0;color:#444444;background-color:#fff;font-weight:normal;}[m
+ footer .amp-accordion-title{background-color:#424242;color:#fff;text-transform:uppercase;font-size:0.9em;}[m
+ footer .amp-accordion{border-bottom:1px solid #4c4b4b;}[m
+[36m@@ -216,96 +212,94 @@[m [mamp-social-share:nth-last-child(1) { margin-right: 0; }[m
+ .NotaOpiniaoMeio{width:20px;height:20px;background-image:url('<PathTo file="images/amp-star-half.svg">'); background-size: 100%; background-repeat: no-repeat;}[m
+ .NotaOpiniaoCheio{width:20px;height:20px;background-image:url('<PathTo file="images/amp-star.svg">'); background-size: 100%; background-repeat: no-repeat;}[m
+ [m
+[31m-[m
+[31m-#idPaginationProdFC { padding: 0 20px; border-top: 1px solid #ccc; }[m
+[31m-#idPaginationProdFC { display: flex; align-items: center; justify-content: center; }[m
+[31m-#idMiddlePageFC { display: flex; justify-content: center; }[m
+[31m-#idMiddlePageFC { margin-top: 25px; margin-bottom: 25px; }[m
+[31m-#idMiddlePageFC a, #idCurrentPageFC { border-radius: 50%; background-color: #ddd; padding: 5px 0; margin-right: 5px; text-align: center; font-size: .8rem; width: 25px; color: #555; font-weight: bold; }[m
+[31m-#idTxtBotNextPageFC, .TxtBotVerMais { display: none; }[m
+[31m-#idCurrentPageFC { background-color: #e20b7c; color: #fff; }[m
+[31m-#idPreviousPageFC, #idNextPageFC { width: 30px; height: 30px; }[m
+[31m-#idPreviousPageFC, #idNextPageFC { position: relative; }[m
+[32m+[m[32m#idPaginationProdFC{padding:0 20px;border-top:1px solid #ccc;}[m
+[32m+[m[32m#idPaginationProdFC{display:flex;align-items:center;justify-content:center;}[m
+[32m+[m[32m#idMiddlePageFC{display:flex;justify-content:center;}[m
+[32m+[m[32m#idMiddlePageFC{margin-top:25px;margin-bottom:25px;}[m
+[32m+[m[32m#idMiddlePageFC a,#idCurrentPageFC{border-radius:50%;background-color:#ddd;padding:5px 0;margin-right:5px;text-align:center;font-size:.8rem;width:25px;color:#555;font-weight:bold;}[m
+[32m+[m[32m#idTxtBotNextPageFC,.TxtBotVerMais{display:none;}[m
+[32m+[m[32m#idCurrentPageFC{background-color:#e20b7c;color:#fff;}[m
+[32m+[m[32m#idPreviousPageFC,#idNextPageFC{width:30px;height:30px;}[m
+[32m+[m[32m#idPreviousPageFC,#idNextPageFC{position:relative;}[m
+ [m
+ /* ProdDet */[m
+[31m-.amp-prod-det-video { margin-top: 15px; margin-bottom: 15px; }[m
+[31m-.amp-prod-det-video iframe { width: 100%; height: auto; }[m
+[31m-.amp-prod-det-img { position: relative; width: 300px; height: 300px; margin: 0 auto; }[m
+[31m-.amp-prod-det-name { font-size: 1.5rem; font-weight: normal; margin-bottom: 0; text-transform: uppercase;  }[m
+[31m-.amp-prod-det-descr { color: #777; font-size: .9rem; margin-top: 15px; }[m
+[31m-.amp-prod-det-ref { font-weight: bold; color: #555; }[m
+[31m-.amp-prod-det-price .FCPriceProd, .amp-prod-det-price .FCPriceSale { font-size: 1rem; font-weight: bold; }[m
+[31m-.amp-prod-det-price .FCPriceSale .FCCurrencyLabel { font-size: 1.5rem; }[m
+[31m-.amp-prod-det-price .FCPriceSale .FCPriceInt, .amp-prod-det-price .FCPriceProd .FCPriceInt { font-size: 2rem; }[m
+[31m-.amp-prod-det-price .FCPriceProd .FCPriceCent, .amp-prod-det-price .FCPriceSale .FCPriceCent { font-size: 1.5rem; }[m
+[31m-.FCPriceOriSale { text-decoration: line-through; }[m
+[31m-.amp-prod-det-btn { color: #fff; display: block; background-color: #19ce3f; padding: 10px; text-align: center; font-weight: bold; width: 200px; margin: 15px auto; border-radius: 2px; }[m
+[32m+[m[32m.amp-prod-det-video{margin-top:15px;margin-bottom:15px;}[m
+[32m+[m[32m.amp-prod-det-video iframe{width:100%;height:auto;}[m
+[32m+[m[32m.amp-prod-det-img{position:relative;width:300px;height:300px;margin:0 auto;}[m
+[32m+[m[32m.amp-prod-det-name{font-size:1.5rem;font-weight:normal;margin-bottom:0;text-transform:uppercase;}[m
+[32m+[m[32m.amp-prod-det-descr{color:#777;font-size:.9rem;margin-top:15px;}[m
+[32m+[m[32m.amp-prod-det-ref{font-weight:bold;color:#555;}[m
+[32m+[m[32m.amp-prod-det-price .FCPriceProd,.amp-prod-det-price .FCPriceSale{font-size:1rem;font-weight:bold;}[m
+[32m+[m[32m.amp-prod-det-price .FCPriceSale .FCCurrencyLabel{font-size:1.5rem;}[m
+[32m+[m[32m.amp-prod-det-price .FCPriceSale .FCPriceInt,.amp-prod-det-price .FCPriceProd .FCPriceInt{font-size:2rem;}[m
+[32m+[m[32m.amp-prod-det-price .FCPriceProd .FCPriceCent,.amp-prod-det-price .FCPriceSale .FCPriceCent{font-size:1.5rem;}[m
+[32m+[m[32m.FCPriceOriSale{text-decoration:line-through;}[m
+[32m+[m[32m.amp-prod-det-btn{color:#fff;display:block;background-color:#19ce3f;padding:10px;text-align:center;font-weight:bold;width:200px;margin:15px auto;border-radius:2px;}[m
+ [m
+ /* Cross-selling */[m
+[31m-.cs-container { padding-top: 10px; padding-bottom: 10px; border-top: 1px solid #ccc; }[m
+[31m-.cs-title, .amp-reviews-title { text-transform: uppercase; font-size: 1rem; color: #555; margin-bottom: 0; font-weight: bold; display: block; }[m
+[31m-.cs-item { display: flex; align-items: flex-start; border-bottom: 1px solid #ddd; padding-top: 15px; padding-bottom: 15px; }[m
+[31m-.cs-item:nth-last-child(1) { border-bottom: 0; }[m
+[31m-.EstDivFotoProdCross { width: 80px; height: 80px; }[m
+[31m-.cs-item-price { color: #444444; font-weight: bold; margin-top: 10px; }[m
+[31m-.cs-item-price-currency, .cs-item-price-cent { font-size: .8rem; }[m
+[32m+[m[32m.cs-container{padding-top:10px;padding-bottom:10px;border-top:1px solid #ccc;}[m
+[32m+[m[32m.cs-title,.amp-reviews-title{text-transform:uppercase;font-size:1rem;color:#555;margin-bottom:0;font-weight:bold;display:block;}[m
+[32m+[m[32m.cs-item{display:flex;align-items:flex-start;border-bottom:1px solid #ddd;padding-top:15px;padding-bottom:15px;}[m
+[32m+[m[32m.cs-item:nth-last-child(1){border-bottom:0;}[m
+[32m+[m[32m.EstDivFotoProdCross{width:80px;height:80px;}[m
+[32m+[m[32m.cs-item-price{color:#444444;font-weight:bold;margin-top:10px;}[m
+[32m+[m[32m.cs-item-price-currency,.cs-item-price-cent{font-size:.8rem;}[m
+ [m
+ /* Ajuda - Help*/[m
+[31m-.FCHelp .EstTabTopo { padding: 10px; background-color: #ddd; color: #333; font-weight: bold; }[m
+[31m-.FCHelp .StyRatePolicies { padding: 0 0 0 20px; }[m
+[31m-.FCHelp .StyRatePolicies li { list-style-type: disc; }[m
+[31m-#idHelpFC:before { content: "Ajuda"; font-weight: bold; color: #333; font-size: 1.5rem; display: block; margin-bottom: 25px; }[m
+[31m-#idHelpFC { line-height: 1.2rem; font-size: .9rem; }[m
+[31m-#idHelpFC p > b { font-weight: normal; }[m
+[31m-#idHelpFC p a { color: #444444; font-weight: bold; }[m
+[31m-#idHelpFC br { display: none; }[m
+[31m-.StyPayment { margin-bottom: 20px; }[m
+[31m-.StyNamePayment { color: #555; margin-bottom: 5px; }[m
+[32m+[m[32m.FCHelp .EstTabTopo{padding:10px;background-color:#ddd;color:#333;font-weight:bold;}[m
+[32m+[m[32m.FCHelp .StyRatePolicies{padding:0 0 0 20px;}[m
+[32m+[m[32m.FCHelp .StyRatePolicies li{list-style-type:disc;}[m
+[32m+[m[32m#idHelpFC:before{content:"Ajuda";font-weight:bold;color:#333;font-size:1.5rem;display:block;margin-bottom:25px;}[m
+[32m+[m[32m#idHelpFC{line-height:1.2rem;font-size:.9rem;}[m
+[32m+[m[32m#idHelpFC p > b{font-weight:normal;}[m
+[32m+[m[32m#idHelpFC p a{color:#444444;font-weight:bold;}[m
+[32m+[m[32m#idHelpFC br{display:none;}[m
+[32m+[m[32m.StyPayment{margin-bottom:20px;}[m
+[32m+[m[32m.StyNamePayment{color:#555;margin-bottom:5px;}[m
+ [m
+ /* Reviews */[m
+[31m-.amp-reviews-info-grade { display: flex; align-items: center; }[m
+[31m-.amp-reviews-info { display: block; margin-top: 10px; margin-bottom: 5px; margin-right: 15px; }[m
+[31m-.amp-reviews-new { display: block; margin-top: 5px; margin-bottom: 20px; line-height: 29px; }[m
+[31m-.amp-reviews-container { border-top: 1px solid #ccc; padding-top: 20px; padding-bottom: 10px; margin-top: 25px; }[m
+[31m-.amp-review-container { border: 1px solid #ccc; margin-bottom: 10px; padding: 10px; border-radius: 2px; font-size: .85rem; }[m
+[31m-.amp-review-name, .amp-review-email, .amp-review-title { display: block; margin-top: 5px; margin-bottom: 5px; color: #555; }[m
+[31m-.amp-review-email { color: #444444; }[m
+[31m-.amp-review-title { font-weight: bold; }[m
+[31m-.amp-review-grade { margin-bottom: 10px; margin-top: 5px; }[m
+[31m-.amp-reviews-new-link { padding: 7px; color: #fff; background-color: #444444; border-radius: 2px; font-size: .9rem; width: 150px; text-align: center; margin-bottom: 5px; }[m
+[31m-.amp-reviews-first { padding: 7px; color: #fff; background-color: #e3037d; border-radius: 2px; font-size: .9rem; width: 100px; text-align: center; margin-bottom: 5px; margin-top: 5px; }[m
+[31m-.amp-reviews-empty { line-height: 1.7rem; margin-top: 10px; display: block; font-size: .9rem; }[m
+[32m+[m[32m.amp-reviews-info-grade{display:flex;align-items:center;}[m
+[32m+[m[32m.amp-reviews-info{display:block;margin-top:10px;margin-bottom:5px;margin-right:15px;}[m
+[32m+[m[32m.amp-reviews-new{display:block;margin-top:5px;margin-bottom:20px;line-height:29px;}[m
+[32m+[m[32m.amp-reviews-container{border-top:1px solid #ccc;padding-top:20px;padding-bottom:10px;margin-top:25px;}[m
+[32m+[m[32m.amp-review-container{border:1px solid #ccc;margin-bottom:10px;padding:10px;border-radius:2px;font-size:.85rem;}[m
+[32m+[m[32m.amp-review-name,.amp-review-email,.amp-review-title{display:block;margin-top:5px;margin-bottom:5px;color:#555;}[m
+[32m+[m[32m.amp-review-email{color:#444444;}[m
+[32m+[m[32m.amp-review-title{font-weight:bold;}[m
+[32m+[m[32m.amp-review-grade{margin-bottom:10px;margin-top:5px;}[m
+[32m+[m[32m.amp-reviews-new-link{padding:7px;color:#fff;background-color:#444444;border-radius:2px;font-size:.9rem;width:150px;text-align:center;margin-bottom:5px;}[m
+[32m+[m[32m.amp-reviews-first{padding:7px;color:#fff;background-color:#e3037d;border-radius:2px;font-size:.9rem;width:100px;text-align:center;margin-bottom:5px;margin-top:5px;}[m
+[32m+[m[32m.amp-reviews-empty{line-height:1.7rem;margin-top:10px;display:block;font-size:.9rem;}[m
+ [m
+ /* Notícias - News */[m
+[31m-#idNewsFC:before { content: "Notícias"; font-weight: bold; color: #333; font-size: 1.5rem; display: block; margin-bottom: 25px; }[m
+[31m-.FCNews .FCFormContainer { display: flex; flex-flow: column wrap; }[m
+[31m-.FCNews .inputsContainer { margin-bottom: 20px; }[m
+[31m-.FCNews .inputsContainer input, .FCNews .inputsContainer select { width: 100%; height: 40px; border-radius: 10px; }[m
+[31m-.buttonForm { width: 100%; display: block; color: #fff; text-align: center; border-radius: 2px; border: 0; padding: 10px; margin-bottom: 10px; font-size: .9rem; background-color: #12cf3d; }[m
+[31m-.inputButton a { width: 100%; display: block; color: #fff; background-color: #666; text-align: center; border-radius: 2px; padding: 10px; margin-bottom: 10px; font-size: .9rem; }[m
+[31m-.FCNews #idTxtQtdNewsFC { margin: 30px 10px 0 0; border-top: 1px solid #e8e8e8; padding-top: 10px; }[m
+[31m-#idTxtClickNewsFC { display: none; }[m
+[31m-#idTitNewsFC { font-weight: bold; color: #333; }[m
+[31m-#idTextNewsFC { font-size: .9rem; line-height: 1.2rem; color: #333; }[m
+[31m-#idSubTitNewsFC { color: #555; font-size: .9rem; display: block; font-weight: normal; }[m
+[31m-#idLocalDateNewsFC { font-size: .9rem; border-bottom: 1px solid #ccc; display: block; padding-bottom: 15px; font-weight: normal; }[m
+[31m-#idContentNewsFC .LocalDateNewsList:last-of-type { border-bottom: 0; }[m
+[31m-#idNotFoundNewsFC { padding-top: 20px; padding-bottom: 20px; }[m
+[31m-.FCNews #idBotVerMais { display: block; padding: 7px; color: #fff; background-color: #444444; border-radius: 2px; font-size: .9rem; width: 100px; text-align: center; margin-bottom: 5px; margin-top: 5px; }[m
+[31m-#idBotVerMais amp-img { display: none; }[m
+[31m-#idSpanImgNewsFC img { height: 100%; min-height: 150px; }[m
+[31m-#idSpanImgNewsFC { width: 100%; height: 150px; position: relative; margin-bottom: 25px; }[m
+[31m-#idPaginationNewsFC { display: flex; justify-content: center; align-items: center; }[m
+[31m-#idTxtPagNewsFC { display: none; } [m
+[31m- [m
+[31m-#idTextArticleNewsFC { padding-bottom: 30px; }[m
+[32m+[m[32m#idNewsFC:before{content:"Notícias";font-weight:bold;color:#333;font-size:1.5rem;display:block;margin-bottom:25px;}[m
+[32m+[m[32m.FCNews .FCFormContainer{display:flex;flex-flow:column wrap;}[m
+[32m+[m[32m.FCNews .inputsContainer{margin-bottom:20px;}[m
+[32m+[m[32m.FCNews .inputsContainer input,.FCNews .inputsContainer select{width:100%;height:40px;border-radius:10px;}[m
+[32m+[m[32m.buttonForm{width:100%;display:block;color:#fff;text-align:center;border-radius:2px;border:0;padding:10px;margin-bottom:10px;font-size:.9rem;background-color:#12cf3d;}[m
+[32m+[m[32m.inputButton a{width:100%;display:block;color:#fff;background-color:#666;text-align:center;border-radius:2px;padding:10px;margin-bottom:10px;font-size:.9rem;}[m
+[32m+[m[32m.FCNews #idTxtQtdNewsFC{margin:30px 10px 0 0;border-top:1px solid #e8e8e8;padding-top:10px;}[m
+[32m+[m[32m#idTxtClickNewsFC{display:none;}[m
+[32m+[m[32m#idTitNewsFC{font-weight:bold;color:#333;}[m
+[32m+[m[32m#idTextNewsFC{font-size:.9rem;line-height:1.2rem;color:#333;}[m
+[32m+[m[32m#idSubTitNewsFC{color:#555;font-size:.9rem;display:block;font-weight:normal;}[m
+[32m+[m[32m#idLocalDateNewsFC{font-size:.9rem;border-bottom:1px solid #ccc;display:block;padding-bottom:15px;font-weight:normal;}[m
+[32m+[m[32m#idContentNewsFC .LocalDateNewsList:last-of-type{border-bottom:0;}[m
+[32m+[m[32m#idNotFoundNewsFC{padding-top:20px;padding-bottom:20px;}[m
+[32m+[m[32m.FCNews #idBotVerMais{display:block;padding:7px;color:#fff;background-color:#444444;border-radius:2px;font-size:.9rem;width:100px;text-align:center;margin-bottom:5px;margin-top:5px;}[m
+[32m+[m[32m#idBotVerMais amp-img{display:none;}[m
+[32m+[m[32m#idSpanImgNewsFC img{height:100%;min-height:150px;}[m
+[32m+[m[32m#idSpanImgNewsFC{width:100%;height:150px;position:relative;margin-bottom:25px;}[m
+[32m+[m[32m#idPaginationNewsFC{display:flex;justify-content:center;align-items:center;}[m
+[32m+[m[32m#idTxtPagNewsFC{display:none;}[m
+[32m+[m[32m#idTextArticleNewsFC{padding-bottom:30px;}[m
+ [m
+ /* ProdNotFound */[m
+[31m-.amp-carousel-container { padding-bottom: 15px; padding-left: 20px; padding-right: 20px; color: #333; }[m
+[31m-.amp-notfound-search { font-weight: bold; display: block; margin-top: 15px; margin-bottom: 15px; color: #555; }[m
+[31m-.amp-model-btn { padding: 7px; color: #fff; background-color: #e3037d; border-radius: 2px; font-size: .9rem; width: 150px; text-align: center; margin-bottom: 5px; border-radius: 10px; }[m
+[31m-.amp-carousel-section { padding-bottom: 50px; }[m
+[31m-.amp-notfound-links { border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; }[m
+[31m-.amp-notfound-links p { line-height: 25px; }[m
+[31m-.amp-notfound-promo { color: #e3037d; display: block; margin-top: 30px; text-align: center; font-size: 24px; }[m
+[32m+[m[32m.amp-carousel-container{padding-bottom:15px;padding-left:20px;padding-right:20px;color:#333;}[m
+[32m+[m[32m.amp-notfound-search{font-weight:bold;display:block;margin-top:15px;margin-bottom:15px;color:#555;}[m
+[32m+[m[32m.amp-model-btn{padding:7px;color:#fff;background-color:#e3037d;border-radius:2px;font-size:.9rem;width:150px;text-align:center;margin-bottom:5px;border-radius:10px;}[m
+[32m+[m[32m.amp-carousel-section{padding-bottom:50px;}[m
+[32m+[m[32m.amp-notfound-links{border-bottom:1px solid #ccc;border-top:1px solid #ccc;}[m
+[32m+[m[32m.amp-notfound-links p{line-height:25px;}[m
+[32m+[m[32m.amp-notfound-promo{color:#e3037d;display:block;margin-top:30px;text-align:center;font-size:24px;}[m
+ </style>[m
+[1mdiff --git a/amhhome.htm b/amhhome.htm[m
+[1mindex d80a979..e28b30b 100644[m
+[1m--- a/amhhome.htm[m
+[1m+++ b/amhhome.htm[m
+[36m@@ -22,7 +22,7 @@[m
+   <!-- MAIS VENDIDOS -->[m
+   <div class="line-brand"></div>[m
+   <div class="Prodout-tittle">[m
+[31m-    <h3>Destaques</h3>[m
+[32m+[m[32m    <h3><a href="">Destaques</a></h3>[m
+   </div>[m
+   <amp-carousel height="370" layout="fixed-height" type="carousel">[m
+     <prod out="p1" id="368657">[m
+[36m@@ -33,10 +33,8 @@[m
+     <prod out="p1" em="rand">[m
+   </amp-carousel>[m
+   <div class="line-brand"></div>[m
+[31m-  <!-- MAIS VENDIDOS -->[m
+[31m-  <!-- PROMOÇÕES E LANÇAMENTOS -->[m
+   <div class="Prodout-tittle">[m
+[31m-    <h3>Novidades</h3>[m
+[32m+[m[32m    <h3><a href="">Novidades</a></h3>[m
+   </div>[m
+   <amp-carousel height="370" layout="fixed-height" type="carousel">[m
+     <prod out="p1" em="rand">[m
+[36m@@ -46,20 +44,18 @@[m
+     <prod out="p1" em="rand">[m
+     <prod out="p1" em="rand">[m
+   </amp-carousel>[m
+[31m-  <!-- PROMOÇÕES E LANÇAMENTOS -->[m
+   <a href="#">[m
+     <amp-img src="<PathTo file="images/banner-mobile-amp.png">"[m
+       width="290"[m
+       height="174"[m
+       layout="responsive"[m
+[31m-      alt="and another sample image">[m
+[32m+[m[32m      alt="Peças MDF">[m
+     </amp-img>[m
+     <br><br>[m
+   </a>[m
+[31m-  <!-- GÉIS E LUBRIFICANTS -->[m
+   <div class="line-brand"></div>[m
+   <div class="Prodout-tittle">[m
+[31m-    <h3>Mais Vendidos</h3>[m
+[32m+[m[32m    <h3><a href="">Mais Vendidos</a></h3>[m
+   </div>[m
+   <amp-carousel height="370" layout="fixed-height" type="carousel">[m
+     <prod out="p1" em="rand">[m
+[36m@@ -70,10 +66,8 @@[m
+     <prod out="p1" em="rand">[m
+   </amp-carousel>[m
+   <div class="line-brand"></div>[m
+[31m-  <!-- GÉIS E LUBRIFICANTS -->[m
+[31m-  <!-- LINGERIES -->[m
+   <div class="Prodout-tittle">[m
+[31m-    <h3>Ofertas</h3>[m
+[32m+[m[32m    <h3><a href="">Ofertas</a></h3>[m
+   </div>[m
+   <amp-carousel height="370" layout="fixed-height" type="carousel">[m
+     <prod out="p1" em="rand">[m
+[36m@@ -84,6 +78,5 @@[m
+     <prod out="p1" em="rand">[m
+   </amp-carousel>[m
+   <div class="line-brand"></div>[m
+[31m-  <!-- LINGERIES -->[m
+ </div>[m
+ <!-- END: PRODUCT SECTION-->[m
+\ No newline at end of file[m
+[1mdiff --git a/amhrodape.htm b/amhrodape.htm[m
+[1mindex 41af466..06e8a5c 100644[m
+[1m--- a/amhrodape.htm[m
+[1m+++ b/amhrodape.htm[m
+[36m@@ -2,7 +2,7 @@[m
+ </section>[m
+ <section class="ShowBannerSection">[m
+   <div class="ShowBanner primary"> [m
+[31m-    <amp-img  layout="responsive"   width="210"  height="87" src="<PathTo file="images/logorodape.svg">"></amp-img>[m
+[32m+[m[32m    <amp-img  layout="responsive" width="210" height="87" src="<PathTo file="images/logorodape.svg">"></amp-img>[m
+     <div class="content">[m
+       <strong>Telefones:</strong>[m
+       <span>Dúvidas: (11) 2883-5091</span><br>[m
+[36m@@ -76,7 +76,7 @@[m
+       <span>Powered by</span>[m
+       <amp-img src="[m
+       <PathTo file="/images/fastcommerce.svg">[m
+[31m-      " width="100" height="25" layout="fixed" alt="fastcommerce"></amp-img>[m
+[32m+[m[32m      "width="100" height="25" layout="fixed" alt="fastcommerce"></amp-img>[m
+     </a>[m
+   </div>[m
+ </footer>[m
+\ No newline at end of file[m

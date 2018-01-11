@@ -55,11 +55,10 @@ var sF$=(function(){
    // RESET STORAGE   
    }
 
-  function MenuStore(){ 
+  function MenuStore(){  
 
     var oToggle=document.getElementById("MenuToggle");
-    var oMClose=document.getElementById("MenuClose");  
-   
+    var oMClose=document.getElementById("MenuClose");   
     var OcontentMenu=document.querySelector(".contentMenu");   
     var OsubList=document.querySelector(".subList");   
     var oreturnMenu=document.querySelector(".Menubreadcrumb");
@@ -69,72 +68,58 @@ var sF$=(function(){
     
     var oAllCat=FCLib$.oCatMenu;
     oToggle.onclick = function(){OpenMenu();}
-    oMClose.onclick = function(){  subMenList.classList.remove("on"); oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}   
-  
+    oMClose.onclick = function(){   if(subMenList){ subMenList.classList.remove("on");}  oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}    
+
+
     for (var i = 0; i < oMenuIten.length;  i++) {  
-      var oItemUrl=oMenuIten[i].childNodes[1]  
-    	var oItems=oMenuIten[i] 
- 
+      var oItemUrl=oMenuIten[i].childNodes[1];  
+    	var oItems=oMenuIten[i];  
+      var oItemsSubL=oItems.childNodes[3];  
 
-      // DESABILITA URL SE HOUVER SUB
-	    if(oItemUrl!=undefined){   
-        var sSvgNext= "<svg version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 405.457 405.457' style='enable-background:new 0 0 405.457 405.457;' xml:space='preserve' width='512px' height='512px'><g> <path d='M64.147,331.322c0.078,4.985,2.163,9.911,5.688,13.438l55,55c3.599,3.601,8.659,5.697,13.75,5.697   c5.091,0,10.151-2.096,13.75-5.697l183.281-183.282c3.601-3.599,5.697-8.659,5.697-13.75s-2.096-10.151-5.697-13.75L152.335,5.697   C148.736,2.096,143.676,0,138.585,0c-5.091,0-10.151,2.096-13.75,5.697l-55,55c-3.591,3.598-5.681,8.651-5.681,13.734   s2.09,10.136,5.681,13.734l114.562,114.563L69.835,317.291C66.171,320.958,64.07,326.139,64.147,331.322L64.147,331.322z' fill='#ef018d'/></g></svg>";
-        oItemUrl.style.pointerEvents="none" 
-      }
-
-      // if (window.matchMedia("(min-width: 1024px)").matches){ 
-         
-      //   oMenuIten[i].onmousemove=function(){  
-      //     oiTem=this.childNodes[3];siTem=this.childNodes[1]; 
-      //     setTimeout(function(){ 
-            
-      //       console.log("oiTem",oiTem)
-      //       console.log("siTem",siTem)
-      //        oiTem.classList.toogle("on"); 
-      //        siTem.style.pointerEvents="inherit"},80);
-      //   }
-      //   oMenuIten[i].onmouseout=function(){    
-      //      oiTem=this.childNodes[3];siTem=this.childNodes[1]; 
-      //     setTimeout(function(){
-      //       // oiTem.classList.remove("on"); 
-      //        oiTem.classList.toogle("on"); 
-
-            
-
-
-      //       siTem.style.pointerEvents="none"},80);
-      //   }
-      // }
-    
-      if (window.matchMedia("(max-width: 1023px)").matches){   
-
+      // DESABILITA URL SE HOUVER SUB 
+	    if(oItemUrl!=undefined){    
+        oItemUrl.style.pointerEvents="none"   
+      }  
+      //HAVENDO SUB-CATEGORIAS É EXIBIDO ICONE NO ITEM
+      if(oItemsSubL){        
+        var sSvgNext= "<i class=iconNext><svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' viewBox='0 0 129 129' enable-background='new 0 0 129 129' width='512px' height='512px'><g><path d='m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z' fill='#a5a4a4'/></g></svg><i>";
+        oItems.innerHTML+=sSvgNext; 
+      }   
+      if (window.matchMedia("(max-width: 1023px)").matches){     
          oMenuIten[i].onclick=function(){    
          subMenList=this.childNodes[3]; 
-         if(subMenList!=undefined){
+         // var sUrlThis=this.childNodes[1].getAttribute("href");
+         var sUrlThis=this.childNodes[1].getAttribute("href");
+       
+         if(subMenList!=undefined){ 
+          OcontentMenu.style.overflow="inherit";     
+          OcontentMenu.classList.remove("on"); 
+          oreturnMenu.style.visibility="visible";  
+          subMenList.classList.add("on"); 
 
-         subMenList.classList.add("on"); 
-         var snameOpt=this.childNodes[1].innerHTML
-         var oSt=localStorage.setItem("snameOpt",snameOpt);
-         var OnameOpt=document.getElementById("nameOpt") 
-         OnameOpt.innerHTML = localStorage.getItem( "snameOpt"); 
-         oreturnMenu.style.visibility="visible";  
+          var snameOpt=this.childNodes[1].innerHTML  
 
-           // EXPOSIÇÃO MENU TABLETS 
-           if (window.matchMedia("(min-width: 768px)").matches){
-              OcontentMenu.classList.remove("on");setTimeout(function(){  OcontentMenu.style.width="100%"; OsubList.style.width="100%"; oMClose.style.display="block";}, 100); ;
-           }  
-             CloseMenu();    
+          var oSt=localStorage.setItem("snameOpt",snameOpt); 
+          var OnameOpt=document.getElementById("nameOpt") 
+          // OnameOpt.innerHTML=localStorage.getItem("snameOpt");  
+          var sStorageGetOpt=localStorage.getItem("snameOpt");  
+
+
+          OnameOpt.innerHTML="<a href="+sUrlThis+">"+sStorageGetOpt+"</a>";  
+
+          // EXPOSIÇÃO MENU TABLETS 
+          if (window.matchMedia("(min-width: 768px)").matches){
+             setTimeout(function(){ OsubList.style.width="100%"; oMClose.style.display="block";}, 100); ;
+          }  
+           CloseMenu();    
          }
         }
-       }
+      }
     }  
     returnMenu.onclick=function(){ 
-      setTimeout(function(){ oMClose.style.display="block";}, 300); 
+      setTimeout(function(){ oMClose.style.display="block";}, 300);  
       subMenList.classList.remove("on");  
-      oreturnMenu.style.visibility="hidden";
-       if (window.matchMedia("(min-width: 768px)").matches){
-         OcontentMenu.style.width="250px";   
-       } 
+      oreturnMenu.style.visibility="hidden"; 
       OpenMenu();
     } 
 
@@ -142,30 +127,33 @@ var sF$=(function(){
        if (window.matchMedia("(max-width: 768px)").matches){oMClose.style.display="none";}
        OcontentMenu.classList.remove("on");  
     }
-    function OpenMenu(){ 
-      console.log("Done")
+    function OpenMenu(){  
       setTimeout(function(){oMClose.style.display="block";}, 400);  
       OcontentMenu.classList.add("on");    
+      OcontentMenu.style.overflow="auto";    
     } 
   }
 
 
-  function MediaQuery(banner1, banner2, banner3, banner4, banner5, banner6, banner7, banner8, banner9, banner10){  
+  function MediaQuery(banner1, banner2, banner3, banner4, banner5, banner6, banner7, banner8, banner9, banner10,banner15,banner20){   
+    if(FC$.Page=="Home"){   
     var ShowBanners=document.getElementById("oneBan");  
     var ShowBannTwo=document.getElementById("twoBan");  
     var ShowBannThr=document.getElementById("threeBan");  
-    var errMsg=ShowBanners.innerHTML="Atenção! Esta loja não possui banners cadastrados!";
-
+    var bannerHomeCenter=document.getElementById("bannerHomeCenter");  
+    var errMsg=ShowBanners.innerHTML="Atenção! Esta loja não possui banners cadastrados!";  
     if (window.matchMedia("(max-width: 767px)").matches){   
         ShowBanners.innerHTML=banner6;
         ShowBannTwo.innerHTML=banner7;
         ShowBannThr.innerHTML=banner8;
+        bannerHomeCenter.innerHTML=banner20;
     }else{  
        ShowBanners.innerHTML=banner1;
        ShowBannTwo.innerHTML=banner2;
        ShowBannThr.innerHTML=banner3;
-    }  
-  
+       bannerHomeCenter.innerHTML=banner15;
+    }   
+    }
   }
 
   var sCurrentPage=document.location.href.toUpperCase();
@@ -639,29 +627,29 @@ function ShowCartOnPage(IDLoja,iErr,sMsg,sCartText,sCheckoutText,este){
 }
 
 // ZipCode - CEP
-function fnShowCEP(IDProd){
-  if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
-    var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);
-    if(sNumCEP==null)sNumCEP="";
-    sCEP="<div id='idDivCEPFC'>";
-    sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete</span></div>";
-    sCEP+="  <div id='idDivContentCEP'>";
-    sCEP+="    <div id='idDivContentFieldsCEP'>";
-    sCEP+="      <div id='idDivCEPCalc'>";
-    sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
-    sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
-    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg?cccfc=1' height='29px' alt='Simular frete' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProd("+ IDProd +")'>";
-    sCEP+="      </div>";
-    sCEP+="    </div>";
-    sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
-    sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";
-    sCEP+="  </div>";
-    if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";
-    sCEP+="</div>";
-    var oShowCEP=document.getElementById("ShowCEP"+IDProd);
-    if(oShowCEP)oShowCEP.innerHTML=sCEP;
-  }
-}
+// function fnShowCEP(IDProd){
+//   if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
+//     var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);
+//     if(sNumCEP==null)sNumCEP="";
+//     sCEP="<div id='idDivCEPFC'>";
+//     sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete</span></div>";
+//     sCEP+="  <div id='idDivContentCEP'>";
+//     sCEP+="    <div id='idDivContentFieldsCEP'>";
+//     sCEP+="      <div id='idDivCEPCalc'>";
+//     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
+//     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
+//     // sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg alt='Simular frete' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProd("+ IDProd +")'>";
+//     sCEP+="      </div>";
+//     sCEP+="    </div>";
+//     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
+//     sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";
+//     sCEP+="  </div>";
+//     if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";
+//     sCEP+="</div>";
+//     var oShowCEP=document.getElementById("ShowCEP"+IDProd);
+//     if(oShowCEP)oShowCEP.innerHTML=sCEP;
+//   }
+// }
 
 function fnGetShippingValuesProd(IDProd){
   sCEP=document.getElementById("idZip"+ IDProd).value;
@@ -902,7 +890,7 @@ function fnShowCEPGrid(IDProd){
     sCEP+="      <div id='idDivCEPCalc'>";
     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
-    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg?cccfc=1' height='29px' id='idCEPButton' alt='Simular frete' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
+    sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg'  id='idCEPButton' alt='Simular frete' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
     sCEP+="      </div>";
     sCEP+="    </div>";
     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' alt=' ' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
