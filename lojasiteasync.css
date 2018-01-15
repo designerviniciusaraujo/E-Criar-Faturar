@@ -44,7 +44,7 @@ span .FooterNewsletterInput{height:50px;font-size:0.88rem;border:1px solid #cccc
 .EstNamePageHistory{text-align:center;margin:0 0 10px 0;font-family:'Lato',verdana,arial;font-weight:400;}
 .EstNamePageHistory a{height:40px;font-size:14px;text-decoration:none;background-color:#FFFFFF;border:0 solid #cecece;color:#515967;}
 .EstNamePageHistory a:hover{height:40px;font-size:14px;text-decoration:underline;background-color:#FFFFFF;border:0 solid #cecece;color:#515967;}
-.EstPricePageHistory{text-align:center;margin:0;font-size:14px;Lato:'Lato',verdana,arial!important;font-weight:400;background-color:#FFFFFF;border:0 solid #cecece;color:#33691e;}
+.EstPricePageHistory{text-align:center;margin:0;font-size:14px;font-weight:400;background-color:#FFFFFF;border:0 solid #cecece;color:#0361a9;}
 .FCMyAccount #idPageHistory,.FCContact #idPageHistory,.FCNews #idPageHistory,.FCNewsletter #idPageHistory,.FCRecommend #idPageHistory,.FCCart #idPageHistory,.FCTrack #idPageHistory{display:none;}
 .FCMyAccount #idAccountFC,.FCContact #FormContactFC,.FCNewsletter #FCFormContainer,.FCRecommend #FCFormContainer{margin-bottom:200px;}
 

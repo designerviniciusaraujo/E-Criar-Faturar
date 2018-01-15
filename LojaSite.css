@@ -391,7 +391,7 @@ body.FCProduct.ProductList #idHeadFilters{width:100%;}
 #EstCommentsTxt, .EstOpiniaoNome, .EstOpiniaoTitulo{font-weight:400;}
 #idEstNoCommentsProdOpFC,#idEstNoCommentsClickProdOpFC,.EstOpiniaoEmail,.EstOpiniaoLocal,.EstOpiniaoTexto{font-weight:400;font-size:0.9rem;line-height:20px;}
 #idCommentsQtyFC,#idCommentsClickFC{font-weight:400;font-size:1rem;padding:0 0 10px 0}
-.ProductStyleReviewOnBoxFC{width:100%;margin:10px 0 10px 0;}
+.ProductStyleReviewOnBoxFC{width:100%;}
 .ProductStyleReviewStarsOnFC{float:right;padding:0 10px 0 0;}
 .ProductStyleReviewQtyOnFC {font-size:0.8rem;padding:4px 0 0 0;float:right;position:relative;left:110px;color:#9b9b9b;}
 .ProductStyleReviewQtyOnFC a{color:#9b9b9b;}
@@ -434,7 +434,7 @@ body.FCProduct.ProductList #idHeadFilters{width:100%;}
 /* Checkout */
 .EstTabPedido{line-height:18px}.EstBarCode{margin:10px 0 0 0}.FCCartRemoveBot{margin:5px 0 0 0} .FCPriceCent{font-size:0.8em;}
 .FCCart .footer-line-separator{margin-top:41px;}
-
+img#idImgLinkConfirmFC{width:100%;}
 /* Custom Destaques Page */
 .DestaquesPage h1{font-size:1.5rem!important;}
 
@@ -607,6 +607,7 @@ table[name="TabEnvioInt"] td{vertical-align:middle;padding:5px 5px;}
 
 .fc-DivGridImg-Small2{position:relative;left:-15px;}
 .FieldCEPBtn{position:relative;left:-5px;margin:0 0 0 5px;height:40px!important;}
+
 #idButtonBuyFC_1{position:fixed;background-color:#F5F5F5;border-top:1px solid #E0E0E0;bottom:0px;left:0px;right:0px;margin-bottom:0px;z-index:9;box-shadow:0 -5px 15px 2px rgba(0,0,0,.2);display:flex;display:-webkit-flex;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center;}
 #idTabShowCartOnPageFC{position:fixed;height:0px;background-color:#ffffff;bottom:100px;margin-bottom:-27px;z-index:99;border:1px solid #BDBDBD}  
 #idTooltipGridFC{position:absolute;top:-26px;width:200px;}
@@ -754,6 +755,7 @@ table[name="TabEnvioInt"] td{vertical-align:middle;padding:5px 5px;}
 /*FOOTER RESERTS*/
 .MainContainer.FoooterMain .col-large-3 {width: 33%;}
 
+
 }
 
 @media only screen and (min-width:1366px){
@@ -833,6 +835,8 @@ ul.CatListFC{font-family:'Cabin',sans-serif;}
 ul.CatListFC li:first-child{font-weight:bold} 
 span#idTxtBotPreviousPageFC{display:none;}
 table#idTabRegisterFC font,.EstNomeCampo{color:#ef018d;}
+span.txtDtails{color:#a7a7a7;}
+div#idAllNewsFC{margin:45px auto;}
 
 /*INTERAÇÃO GENERICA*/
 .btninteration{border-radius:4px;text-align:center;transition:all 0.5s;cursor:pointer;}
@@ -875,7 +879,7 @@ li#Header_SocialLogin_NamePosition,span#idImgGlobalSignFC{display:flex;align-ite
 
 .container.FCAbout{max-width:800px;margin:0 auto;}
 .About-Tittle{padding:10px;font-size:1rem;margin:50px 0 10px 0;background:#dedede;}
-.contentBody p{color:#7d7d7d;}
+.contentBody p{color:#7d7d7d;} 
 
 /*SLIDE*/
 .swiper-slide img {max-width:100%;min-width:100%;margin:0 auto;display: block;} 
@@ -946,7 +950,7 @@ div#DivShowCartOnPage tr{display:inline-grid;width:100%;}
 .SocialProdLinks img,#idShareFooter img{transform:scale(1);transition:.3s}
 .SocialProdLinks img:hover,#idShareFooter img:hover{transform:scale(1.2);transition:.3s}
 div#idBreadcrumb a:hover{text-decoration:underline;}
-
+#idCEPButton{cursor: pointer;}
 /*MENU*/
 .baseMenu{background:#0361a9;padding:15px 0;}
 span#MenuToggle{display:flex;align-items:center;color:#fff;text-transform:uppercase;cursor:pointer;}
@@ -988,18 +992,18 @@ h3.DestProd{text-transform:uppercase;color:#ef018d;margin:10px auto}
 .homeTopics:hover	img {transform: scale(1.3);transition: .3s}
 .homeTopics { background:url("<Baseloja>images/bg-banner-pather.png") no-repeat bottom right;   margin: 9px auto; padding: 30px 0; color: #ffffff;    border-radius: 3px; }
 .homeTopics.primary { background-color: #0361a9; }
-.homeTopics.second { background-color: #ef018d; }
+.homeTopics.second { background-color: #ef018d; }	
 .homeTopics strong { line-height: 1.5; }
 .bannerHome img { width: 100%;    border-radius: 3px;}
 .ShowBanner {display: none;}
 .FCHome .ShowBanner {display: block;}
 .ShowBanner.primary { background-color: #0361a9 }
 .ShowBanner.second { background-color: #ef018d }
-.ShowBanner.last {background: #0361a9 url("<Baseloja>images/bg-banner-pather3.png") no-repeat bottom left;    padding: 60px 0 0;  } 
+.ShowBanner.last {background: #0361a9 url("<Baseloja>images/bg-banner-pather3.png") no-repeat bottom center;background-size: cover;    padding: 60px 0 0;  } 
 .ShowBanner {background:url("<Baseloja>images/bg-banner-pather2.png") no-repeat bottom left;}  
 .ShowBanner .content strong { display: block; text-align: left; text-transform: uppercase; margin: 15px auto 8px; }
 .ShowBanner .content span { line-height: 1.3; }
-.ShowBanner .content { margin: 25px auto; text-align: left; color: #fff; }
+.ShowBanner .content { margin: 25px auto; text-align: left; color: #fff; font-size: 13px}
 .ShowBanner img{max-width:100%;display:flex;}
 .ShowBanner.last.primary img{display:inline;}
 section.Htopics { margin: 0 auto 40px; display: inline-block; width: 100%;} 
@@ -1017,17 +1021,17 @@ iframe#Disp{padding:0!important;}
 #popupNews h1{color:#0574c9; top:0px; left:2px;}
 #popupNews span{color:#e3037d;font-size:38px;font-weight:bold;display:block;text-align:left;line-height:0.9;margin:15px auto;padding:0 15px}
 div#popupNews p{display:block;text-align:left;padding:0 17px;font-size:25px!important;font-weight:bold;margin:25px auto 10px;    color: #0361a9; 	}
-.btnClose{width: auto; height:auto; display: block; padding:10px 3px 0 0; float: right; outline: none;}
+.btnClose{width: auto; height:auto; display: block; padding:10px 3px 0 0; float: right; outline: none;cursor: pointer;}
 .popnews-down{display:flex}
-.formNews{display:flex;justify-content:end;width:80%;margin:0 15px}
-button.btn-popnews{display:flex;margin:90px 10px 0;background:transparent;border:0;font-weight:bold;color:#b1b1b1;font-size:0.9em;text-decoration:underline}
-.btnSubPop{border-radius: 0px 3px 3px 0px;text-align: center; height:45px;font-weight:bold;outline:none;border: 0px; background: url('<Baseloja>images/btnSubPop.png') no-repeat; width: 138px; color:#ffffff; text-transform:uppercase;height: 47px; cursor:pointer; background-color: #ef018d; }
+.formNews{display:flex;justify-content:flex-start;width:80%;margin:0 15px}
+button.btn-popnews{display:flex;margin:90px 10px 0;background:transparent;border:0;font-weight:bold;color:#b1b1b1;font-size:0.9em;text-decoration:underline;cursor: pointer;s}
+.btnSubPop{border-radius: 0px 3px 3px 0px;text-align: center; height:45px;font-weight:bold;outline:none;border: 0px; width: 138px; color:#ffffff; text-transform:uppercase;height: 47px; cursor:pointer; background-color: #ef018d; }
 div#BasePorNews { position: absolute;  width: 100%;  height: 100%;   top: 0;    left: 0}
 #rdate {border:0; background:transparent;}
 .Newspopup input[type="text"],
 input[type="email"]{background:#fff;border-radius:2px;padding:5px 5px;width:210px;border:0;height:47px;border:1px solid #cacaca;font-size:1.1em;} 
 #popupNews {background-image: url(<Baseloja>images/dontgoBanner.png);position: relative; background-position: 100%; background-repeat: no-repeat; z-index: 999999991; background-color: #fff; width: 735px; min-height: 315px; border-radius: 5px; box-shadow: 0 0 5px 0 black; text-align: center; padding: 5px 10px; margin: 0 auto; top: 30%; }
-.ShowBanner{margin-left:10px;margin-right:10px;border-radius:3px;padding:25px 45px;}
+.ShowBanner{margin-left:10px;margin-right:10px;border-radius:3px;padding:20px}	
 .ShowBanner .content a{color:#fff;font-weight:bold;text-decoration:underline;}
 
 /*CESTA*/
@@ -1049,6 +1053,7 @@ ul.flx.security{justify-content:space-around;background:#fff;border-radius:5px;p
 ul.payment.flx{flex-wrap:wrap;width:215px;justify-content:space-between;}
 ul.payment.flx li{padding:4px 0!important;}
 .row.last{border-top:1px solid #373737;padding:20px 0; }
+span.CompanyZipcode:before{content:' / ';}
 
 /*SUBPAGES*/
 span#idTxtLinkCatFC a{background:#ef018d;color:#fff;border-radius:5px;padding:0 5px;}
@@ -1201,8 +1206,9 @@ ul.contentMenu a{font-size:19px;}
 
 section.Htopics .col-small-12.col-medium-6.col-large-3.col-mlarge-3.col-xlarge-3{padding:0 0 0 10px;}
 section.Htopics .col-small-12.col-medium-6.col-large-3.col-mlarge-3.col-xlarge-3:first-child{padding: 0}
+.ShowBanner{padding:25px}	
+
 }
-@media(min-width:1400px){.swiper-container-banners.swiper-container-horizontal{max-width:1325px;min-width:1325px;margin:0 auto;}}
-
-
+ 
+.swiper-container-banners.swiper-container-horizontal{max-width:1325px;width:1325px;min-width:1325px;margin:0 auto;}
 

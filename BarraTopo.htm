@@ -1,10 +1,9 @@
-<!--[if IE]>
-<style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style>
+<!--[if IE]> 
 <![endif]-->
 <!-- EQUIPE ZFAST 01-2018 -->
 <link rel="search">
 <link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
-<script src='<PathTo file="htm/lojalib.js">'></script> 
+<script src='<PathTo file="htm/js/lojalib.js">'></script> 
 <script src='<PathTo file="htm/jurosparcelas.js">'></script>
 <script>iItensCesta=<QtdCesta>;</script>  
 <style>body {font-family: 'Cabin', sans-serif !important;}</style>
@@ -24,9 +23,9 @@
             <img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" alt="Buscar Produtos">
           </a>
           <div class="best-search">
-            <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a> 
+            <a href="/buscaavancada.asp?idloja=<IDLoja>">Busca Avançada</a>             
           </div>
-        </form>
+        </form> 
       </div>
       <div class="hidden-xs col-medium-3 col-large-3 col-xlarge-3">
         <div class="FCToolBarCart flx">
@@ -135,7 +134,7 @@
 <!-- MENU -->
 <div class="baseMenu">
   <div class="MainContainer">
-    <div id="MenuClose"></div>
+    <div id="MenuClose"></div> 
     <ul>
       <span id="MenuToggle">
         <img64 src="<BaseLoja>images/menu.svg" plain="true" width="30" height="30" style="margin-right: 10px;">
@@ -152,9 +151,11 @@
           <li class="hidden-smh"><a href="/addProduto.asp?idloja=<IDLojaNum>">Minha Sacola</a></li>
           <li class="hidden-smh"><a href="/ajuda.asp?idloja=<IDLoja>">Dúvidas</a></li>
           <li class="hidden-smh"><a href="/faleconosco.asp?idloja=<IDLoja>">Fale Conosco</a></li>
+          <a class="hidden-smh" href="/categorias.asp?idloja=<IDLoja>">
+            <h2>Departamentos</h2>
+          </a>
           <li>
-            <a href="/faleconosco.asp?idloja=<IDLoja>">Artesanato</a>
-          
+            <a href="/faleconosco.asp?idloja=<IDLoja>">Artesanato</a>          
             <ul class="subList">
               <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">
                 <li><a class="btninteration" href="#"><span>one</span></a></li>
@@ -496,12 +497,40 @@
           </li>
           <li class="MegaMenu-right">
             <a href="#">Ziper</a> 
+             <ul class="subList" >
+              <div class="col-xs-12 col-medium-4 col-large-4 col-xlarge-4">
+                <li><a class="btninteration" href="#"><span>Abridor</span></a></li>
+                <li><a class="btninteration" href="#"><span>Agulheiro</span></a></li>
+                <li><a class="btninteration" href="#"><span>Almofada</span></a></li>
+                <li><a class="btninteration" href="#"><span>Carretilha</span></a></li>
+                <li><a class="btninteration" href="#"><span>Estilete</span></a></li>
+                <li><a class="btninteration" href="#"><span>Etiqueta TAG</span></a></li>
+                <li><a class="btninteration" href="#"><span>Fita Métrica</span></a></li>
+                <li><a class="btninteration" href="#"><span>Giz</span></a></li>
+                <li><a class="btninteration" href="#"><span> Pistola de TAG / Refil TAG</span></a></li>
+                <li><a class="btninteration" href="#"><span> Linha de Crochê</span></a></li>
+                <li><a class="btninteration" href="#"><span>Tesoura </span></a></li>
+              </div>
+              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">
+                <li><a class="btninteration" href="#"><span>Acessórios de Aviamento BUG</span></a></li>
+                <li><a class="btninteration" href="#"><span>Alfinete</span></a></li>
+                <li><a class="btninteration" href="#"><span>Bobina</span></a></li>
+                <li><a class="btninteration" href="#"><span>Cola / Cola Quente</span></a></li>
+                <li><a class="btninteration" href="#"><span>Estojo de Costura</span></a></li>
+                <li><a class="btninteration" href="#"><span>FIta de Fixação</span></a></li>
+                <li><a class="btninteration" href="#"><span>Fivela Cromada</span></a></li>
+                <li><a class="btninteration" href="#"><span>Imã</span></a></li>
+                <li><a class="btninteration" href="#"><span>Marcador de Costura</span></a></li>
+                <li><a class="btninteration" href="#"><span>Strass em Folha</span></a></li>
+                <li><a class="btninteration" href="#"><span>Ver todos</span></a></li>
+              </div>
+              <div class="hidden-xs col-medium-4 col-large-4 col-xlarge-4">
+                <prod out="p254" em="rand">
+              </div>
+            </ul>
           </li>
           <li class="diffStrong"><a href="/listaprodutos.asp?idloja=<IDLoja>&promocao=true">Ofertas</a></li>
-        </span>
-        <a class="hidden-smh" href="/categorias.asp?idloja=<IDLoja>">
-          <h2>Departamentos</h2>
-        </a>
+        </span> 
         <ListPathCat out="10">
       </ul>
       <div class="overlayMenu" style="display: none;"></div>

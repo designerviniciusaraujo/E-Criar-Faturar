@@ -72,8 +72,7 @@
   <div id="idPagProdTop"></div>
 </ProdTop>
 <ProdLista>
-  <!-- Prod Lista -->
-  <FormProd>
+  <!-- Prod Lista -->   
     <div class="DivListProd col-small-6 col-medium-4 col-large-4 col-xlarge-3" onclick="NoCascate('<URLProd>');">
       <div class="DivProductListProd">
         <div class="DivProductListImagemProd">
@@ -100,15 +99,14 @@
             <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>
           </div>
         </div>
-        <a class="boxInteration"> 
+        <a href="<URLProd>" class="boxInteration" onclick="NoCascate('<URLProd>');"> 
         <img src="<BaseLoja>images/bt_mais.png">
         <button class="bt details"> Veja Mais</button>  
         </a>
       </div>
-    </div>
-  </FormProd>
+    </div> 
 </ProdLista>
-<ProdDet>
+<ProdDet> 
   <!-- Prod Det -->
   <link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1" />
   <script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
