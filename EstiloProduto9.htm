@@ -2,13 +2,13 @@
 <ProdTop>
 <base target="_parent">
 <script src='<PathTo file="htm/jurosparcelas.js">'></script>
-<script src='<PathTo file="htm/lojalib.js">'></script>
-<link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
+<script src='<PathTo file="htm/js/lojalib.js">'></script>
+<link rel="stylesheet" href="/wave/v3/wavemin.css">
 <IncludeTagged src="htm/lojasite.css" async>
   <!-- Begin: JS scripts grid -->
-<script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js?cccfc=1"></script>
+<script src="/js/magictoolbox/magiczoomplusv1/magiczoomplus.js"></script>
 <script src="<PathTo file="htm/js/fc_grid_v1.js">"></script>
-<script>sF$.fnLinkDisp();ShowCartOnPage();</script>
+ 
 <style type="text/css">body{background:#ffffff;} #bTContainer{display:none} .vex.vex-theme-default .vex-content {    background: #ffffff !important;}
 .FastPreviewBox{display:flex;margin:25px auto;justify-content:space-between;}
 .box{width:50%; margin-right:20px;}
@@ -35,15 +35,14 @@ span.home-price-cents {font-size:.8em}
 .FastPreviewBox .installments strong:first-child span{padding:0px; }
 .FastPreviewBox .installments span:last-child{padding:0px; }
 .FastPreviewBox .FCfnShowEconomy{font-size:13px;display:block; color:#E91E63;width:100%!important;text-align:left;margin: 0 auto}
-.FastPreviewBox .FCBoxGrid{padding:0}
+.FastPreviewBox .FCBoxGrid{padding:0;    margin: 10px auto;}
 .DivProductDet-sku{font-size:12px;color:#000000; font-weight: bold;}
 small#idCodProdGrid{color:#444;font-weight:bold;text-transform:uppercase;}
 </style>
 <link href="<PathTo file="htm/css/fc_grid_v1.css">" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/js/magictoolbox/magiczoomplusv1/magiczoomplus.css?cccfc=1"/>
  
-<div class="FastPreviewBox"> 
-
+<div class="FastPreviewBox">  
   <div class="box a">
   <div id="idDivGridImg">
    <a href="<ImagemProdAmp>" class="MagicZoomPlus" rel="hint:false;initialize-on: mouseover;"><img src="<ImagemProdDet>" alt="<NomeProd>" onError="MostraImgOnError(this,0)"></a> 
@@ -59,11 +58,9 @@ small#idCodProdGrid{color:#444;font-weight:bold;text-transform:uppercase;}
     <div class="DivHomePriceProd" id="idPriceGridFC<IDProduto>" style="white-space:nowrap;">
       <div id="idProdPrice<IDProduto>"><script> sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div>      
         <script>sF$.fnShowEconomy(<PrecoNum>,<PrecoOri>)</script> 
-    </div>  
-
+    </div>   
       <div class="col-small-12 FCGridMain" id="idMainGridFC_<IDProduto>"></div>
-  </div>
-
+  </div> 
 </div> 
  
  

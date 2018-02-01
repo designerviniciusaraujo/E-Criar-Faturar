@@ -61,13 +61,24 @@ var sF$=(function(){
     var oMClose=document.getElementById("MenuClose");   
     var OcontentMenu=document.querySelector(".contentMenu");   
     var OsubList=document.querySelector(".subList");   
-    var oreturnMenu=document.querySelector(".Menubreadcrumb");
+    var oreturnMenu=document.querySelector(".OptsMenu");
+    var oBtnReturnMenu=document.getElementById("returnMenu");
     var oMenuIten=document.querySelectorAll(".CatsMoreSubs li");  
+    var subMenList;
+
+
+   
+    var sWidth = window.outerWidth;
+    var sHeight = window.outerHeight;
+    var obody = document.getElementsByTagName("BODY")[0]; 
+ 
+  
+    // window.addEventListener("resize", function(){location.reload();});
 
     oMClose.innerHTML="<svg  width='25px' height='25px' fill='#fff' id='Layer_1' style='enable-background:new 0 0 512 512;' version='1.1' viewBox='0 0 512 512' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><path d='M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z'/></svg>";
-     
+ 
     oToggle.onclick = function(){OpenMenu();}
-    oMClose.onclick = function(){   if(subMenList){ subMenList.classList.remove("on");}  oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}   
+    oMClose.onclick = function(){if(subMenList!=undefined){subMenList.classList.remove("on");}oreturnMenu.style.visibility="hidden";OsubList.classList.remove("on");CloseMenu();}   
 
     for (var i = 0; i < oMenuIten.length;  i++) {  
       var oItemUrl=oMenuIten[i].childNodes[1];  
@@ -81,16 +92,16 @@ var sF$=(function(){
         oItems.innerHTML+=sSvgNext; 
       
       }   
-      if (window.matchMedia("(max-width: 1023px)").matches){     
+     if (window.matchMedia("(max-width: 1023px)").matches){     
          oMenuIten[i].onclick=function(){    
          subMenList=this.childNodes[3]; 
-         // var sUrlThis=this.childNodes[1].getAttribute("href");
-         
        
          if(subMenList!=undefined){ 
           var sUrlThis=this.childNodes[1].getAttribute("href");
           OcontentMenu.style.overflow="inherit";     
-          OcontentMenu.classList.remove("on"); 
+          OcontentMenu.classList.remove("on");  
+          OcontentMenu.style.position="absolute";  
+          oreturnMenu.style.left="100%";  
           oreturnMenu.style.visibility="visible";  
           subMenList.classList.add("on"); 
 
@@ -109,9 +120,9 @@ var sF$=(function(){
            CloseMenu();    
          }
         }
-      }
+       }
     }  
-    returnMenu.onclick=function(){ 
+    oBtnReturnMenu.onclick=function(){ 
       setTimeout(function(){ oMClose.style.display="block";}, 300);  
       subMenList.classList.remove("on");  
       oreturnMenu.style.visibility="hidden"; 
@@ -400,7 +411,7 @@ var sF$=(function(){
       var sPageHistory="";
       try{var sBar=(oHistoryPages[0].getElementsByTagName("title")[0].childNodes[0].nodeValue);}
       catch(e){var sBar="";}
-      if(sBar!=""){sPageHistory+="<div id='idDivPageHistory'><div id='idPageHistoryFC'><div class='col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left'><div id='idTitPageHistory'><h3>Meu histórico de navegação:</h3></div></div><div class='col-small-12 col-medium-12 col-large-12 col-xlarge-12 fc-footer-history-sep'></div><ul id='idListPageHistoryFC'>";}  
+      if(sBar!=""){sPageHistory+="<div id='idDivPageHistory'><div id='idPageHistoryFC'><div class='col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left'><div id='idTitPageHistory'><h3>Paginas Visitadas</h3></div></div><div class='col-small-12 col-medium-12 col-large-12 col-xlarge-12 fc-footer-history-sep'></div><ul id='idListPageHistoryFC'>";}  
       for (i=0;i<oHistoryPages.length;i++){
         sTitleProd=oHistoryPages[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
         sLinkProd=oHistoryPages[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
@@ -620,31 +631,7 @@ function ShowCartOnPage(IDLoja,iErr,sMsg,sCartText,sCheckoutText,este){
   iLastCartOnPage++;
   setTimeout("if(iLastCartOnPage=="+ iLastCartOnPage +")oDivShowCartOnPage.style.visibility='hidden';",4000);
 }
-
-// ZipCode - CEP
-// function fnShowCEP(IDProd){
-//   if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
-//     var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);
-//     if(sNumCEP==null)sNumCEP="";
-//     sCEP="<div id='idDivCEPFC'>";
-//     sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete</span></div>";
-//     sCEP+="  <div id='idDivContentCEP'>";
-//     sCEP+="    <div id='idDivContentFieldsCEP'>";
-//     sCEP+="      <div id='idDivCEPCalc'>";
-//     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
-//     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
-//     // sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg alt='Simular frete' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProd("+ IDProd +")'>";
-//     sCEP+="      </div>";
-//     sCEP+="    </div>";
-//     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
-//     sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";
-//     sCEP+="  </div>";
-//     if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";
-//     sCEP+="</div>";
-//     var oShowCEP=document.getElementById("ShowCEP"+IDProd);
-//     if(oShowCEP)oShowCEP.innerHTML=sCEP;
-//   }
-// }
+ 
 
 function fnGetShippingValuesProd(IDProd){
   sCEP=document.getElementById("idZip"+ IDProd).value;
@@ -878,11 +865,12 @@ function fnShowCEPGrid(IDProd){
   if(FC$.TypeFrt==3){ 
     var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);
     if(sNumCEP==null)sNumCEP="";
-    sCEP="<div id='idDivCEPFC' class='ProductDet-cep-position'>";
-    sCEP+="  <div id='idDivTitCEP'><span class='font-bold'>Simule o valor do frete:</span></div>";
+    sCEP="<div id='idDivCEPFC' class='ProductDet-cep-position'> " ;
     sCEP+="  <div id='idDivContentCEP'>";
     sCEP+="    <div id='idDivContentFieldsCEP'>";
     sCEP+="      <div id='idDivCEPCalc'>";
+    sCEP+="  <div id='idDivTitCEP'><span class='font-bold'><img src='" + FC$.PathImg + "truck.svg' width='25' height='25' alt='Zip box' />Simule o valor do frete:</span></div>";
+
     sCEP+="        <div class='FieldCEP FieldCEPQty'><label>Qtd.</label><input type='number' id='idQtdZip"+ IDProd +"' value='1' maxlength='4'></div>";
     sCEP+="        <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"' maxlength='9'></div>";
     sCEP+="        <img src='"+ FC$.PathImg +"icon-arrow-cep.svg'  id='idCEPButton' alt='Simular frete' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";

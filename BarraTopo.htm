@@ -4,7 +4,7 @@
 <link rel="search">
 <link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
 <script src='<PathTo file="htm/js/lojalib.js">'></script> 
-<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script src='<PathTo file="htm/js/jurosparcelas.js">'></script>
 <script>iItensCesta=<QtdCesta>;</script>  
 <style>body {font-family: 'Cabin', sans-serif !important;}</style>
 <!-- Begin: Toolbar -->
@@ -132,7 +132,7 @@
 </div>
 <!-- BRANDTOP -->
 <!-- MENU -->
-<div class="baseMenu">
+<div class="baseMenu" id="Menu">
   <div class="MainContainer">
     <div id="MenuClose"></div> 
     <ul>
@@ -142,10 +142,10 @@
       </span>
       <ul class="contentMenu">
         <span class="CatsMoreSubs">
-          <div class="Menubreadcrumb"> 
+           <div class="OptsMenu"> 
             <a href="#" id="returnMenu">Voltar</a>
             <a href="#">Veja tudo sobre <span id="nameOpt"></span></a>
-          </div>
+          </div>  
           <li class="hidden-smh"><a href="/home.asp?idloja=<IDLoja>">Home</a></li>
           <li class="hidden-smh"><a href="/account.asp?idloja=10604&orders=1#Orders">Meus Pedidos</a></li>
           <li class="hidden-smh"><a href="/addProduto.asp?idloja=<IDLojaNum>">Minha Sacola</a></li>
@@ -531,7 +531,7 @@
           </li>
           <li class="diffStrong"><a href="/listaprodutos.asp?idloja=<IDLoja>&promocao=true">Ofertas</a></li>
         </span> 
-        <ListPathCat out="10">
+ 
       </ul>
       <div class="overlayMenu" style="display: none;"></div>
     </ul>

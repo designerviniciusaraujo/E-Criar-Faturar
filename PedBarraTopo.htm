@@ -1,15 +1,28 @@
-<link rel="stylesheet" href="<PathTo file="htm/checkout.css">">
-<script src="<PathTo file="htm/lojalib.js">"></script>
-<div class="header-ped-line"></div>
-<!-- Logo -->
-<div class="row">
-  <div class="MainContainer">
-    <div class="col-small-10 col-medium-7 col-large-7 col-mlarge-7 col-xlarge-7 text-right">
-      <a href="<StoreDomain>"><img alt="<NomeLoja>" title="<NomeLoja>" src="<PathTo file="images/logo-criar-e-faturar.svg">" class="HeaderLogo"></a>
-    </div>
-    <div class="col-small-8 col-medium-2 col-large-2 col-mlarge-2 col-xlarge-5 text-right">
-      <a class="help" title="Ajuda da loja" href="/ajuda.asp?idloja=<IDLoja>"><span class="ic_help">?</span>Ajuda</a>
-    </div>
-  </div>
-</div>
-<div class="HeaderPedSepLineFC">&nbsp;</div>
+	<link rel="stylesheet" href="<PathTo file="htm/checkout.css">">
+	<script src="<PathTo file="htm/lojalib.js">"></script>
+<header class="rowEsp">
+	<!-- Logo -->
+	<div class="header-ped-line"></div>
+	<div class="row">
+	  <div class="MainContainer">
+	    <div class="col-small-10 col-medium-7 col-large-7 col-mlarge-7 col-xlarge-7 text-right">
+	      <a href="<StoreDomain>"><img alt="<NomeLoja>" title="<NomeLoja>" src="<PathTo file="images/logo-criar-e-faturar.svg">" class="HeaderLogo"></a>
+	    </div>
+	    <div class="col-small-8 col-medium-2 col-large-2 col-mlarge-2 col-xlarge-5 text-right">
+	      <a class="help tooltip" title="Ajuda da loja" href="/ajuda.asp?idloja=<IDLoja>"><span class="ic_help">?</span><span class="tooltiptxt">Central de ajuda</span>Ajuda</a>
+	    </div>
+	  </div>
+	</div>
+	<div class="HeaderPedSepLineFC">&nbsp;</div>
+</header>
+<div class="rowEsp">
+ 
+<style>
+html{height:100%;width:100%;}
+body{height:100%;width:100%;display:table!important;table-layout:fixed;}
+div.rowEsp{height:100%;background:#fff}
+.rowEsp{display:table-row;}
+.tooltip{position:relative;}
+.tooltip:hover span.tooltiptxt{visibility:visible;}
+span.tooltiptxt{background:#2e3192;color:#fff;border-radius:5px;padding:5px;position:absolute;font-weight:normal;top:0;font-size:12px;white-space:nowrap;visibility:hidden;}
+	</style>

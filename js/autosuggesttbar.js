@@ -215,7 +215,7 @@ jQuery("#autocomplete-toolbar").autocomplete({
       var nm = item.label.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + jQuery.ui.autocomplete.escapeRegex(this.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>");
       return jQuery("<li class='active prods-itens'></li>")
       .data("item.autocomplete", item)
-      .append("<a><table width='100%'><tr height='75px'><td align=center class='SearchIMGFC'><span><img src='"+ FC$.PathPrd  + item.im + "' id='as-img-prod' style='vertical-align:middle;'></span></td><td width='55%'><div id='as-nomecat-prod'><span id='as-nome-prod'>" + nm + "</span><br/><span id='as-cat-prod'>" + item.c + "</span></div></td><td width=25 class='as-sale'>"+ sSale +"</td><td align='right' id='as-valor-prod' nowrap='nowrap'><span>" + valor +"</span></td></tr></table></a>")
+      .append("<a><table width='100%'><tr height='75px'><td align=center class='SearchIMGFC'><span><img src='"+(item.im.indexOf('#')>=0?item.im.replace('#',FC$.PathPrdExt):FC$.PathPrd+item.im)+"' id='as-img-prod' style='vertical-align:middle;'></span></td><td width='55%'><div id='as-nomecat-prod'><span id='as-nome-prod'>" + nm + "</span><br/><span id='as-cat-prod'>" + item.c + "</span></div></td><td width=25 class='as-sale'>"+ sSale +"</td><td align='right' id='as-valor-prod' nowrap='nowrap'><span>" + valor +"</span></td></tr></table></a>")
       .appendTo(ul);
     }   
 

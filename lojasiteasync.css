@@ -1,7 +1,6 @@
 /* Fastcommerce - Store 3 Async - 2018 (v1) */
 
-/* Footer - Rodape.htm */
- 
+/* Footer - Rodape.htm */ 
 .FooterMainBarFC .row .title-footer{    text-transform: uppercase;display:block;margin:0px auto;text-align:left;margin-bottom:8px;color:#FFFFFF;font-size:1.3rem;}
 .FooterMainBarFC .row ul{font-family:'Lato',verdana,arial!important;}
 .FooterMainBarFC .row ul li{list-style:none;text-align:left;padding:8px 0 8px 0;display: flex;align-items: center;}
@@ -24,7 +23,7 @@ span .FooterNewsletterInput{height:50px;font-size:0.88rem;border:1px solid #cccc
 .FooterTitleTxt{display:block;font-family:'Lato',verdana,arial!important;font-weight:700;margin:0 auto 8px;text-align:left;color:<tag-FCCSSSecondMainColor>}
 .FooterULPaymentFC li{display:inline;}
 .FooterTecFastcommerce,.FooterTecFastcommerce a,.CompanyAddressLine2 {color:#9f9f9f;    font-size: 12px !important;}
-.FastC {display:flex; font-size: 12px; justify-content: flex-end; color:#9f9f9f;align-items: center; }
+.FastC {display:flex; font-size: 12px; justify-content: center; color:#9f9f9f;align-items: center;}
 
 @media(min-width:641px) and (max-width: 1024px){ 
 .FooterTecFastcommerce,.FooterTecFastcommerce a,.CompanyAddressLine2{line-height:2;}
@@ -34,8 +33,8 @@ span .FooterNewsletterInput{height:50px;font-size:0.88rem;border:1px solid #cccc
 /* History */
 #idPageHistory{width:100%;margin-top:60px;color:#212121;}
 #idDivPageHistory{max-width:100%;margin:0 auto;}
-#idTitPageHistory h3{font-size:1.2rem;font-weight:bold;margin:0 0 0 0;}
-.fc-footer-history-sep{border-bottom: 1px solid #e2e2e2;}
+#idTitPageHistory h3{font-size:1.2rem;font-weight:normal;margin:0 0 0 0;text-align:center;color:#0361a9;}
+ 
 #idPageHistoryFC li{list-style-type:none;margin:0;padding:0;vertical-align:top}
 #idPageHistoryFC ul li{display:inline-block;}
 #idListPageHistoryFC li{margin:10px 5px 30px 5px;width:18%;min-width:170px;}
@@ -49,9 +48,9 @@ span .FooterNewsletterInput{height:50px;font-size:0.88rem;border:1px solid #cccc
 .FCMyAccount #idAccountFC,.FCContact #FormContactFC,.FCNewsletter #FCFormContainer,.FCRecommend #FCFormContainer{margin-bottom:200px;}
 
 /*CrossSelling*/
-.ProductDet #idProdCrossFC{border-top:1px solid #cccccc;margin-top:10px;}
+.ProductDet #idProdCrossFC{margin-top:10px;}
 .DivCrossSelling{width:100%;float:left;margin-top:30px;}
-#idTitProdCrossFC{color:#212121;font-size:1.2em;font-weight:bold;margin:20px 0 10px 10px;text-align:left;}
+#idTitProdCrossFC{color:#636262;font-size:1.2em;font-weight:bold;margin:23px 0 10px 10px;text-align:left;border-top:1px solid #ddd;padding:1em 0;}
 #idProdCrossFC{margin:0;width:100%;background-color:#FFFFFF;}
 #idProdCrossFC ul li{display:inline-block;float:left;padding:12px;}
 #idListProdCrossFC{overflow:hidden;height:248px;position:relative;}
@@ -63,7 +62,7 @@ span .FooterNewsletterInput{height:50px;font-size:0.88rem;border:1px solid #cccc
 .EstRefProdCross{display:none;font-family:'Lato',verdana,arial;font-weight:400;color:#333333;}
 .EstNameProdCross{font-size:12px;line-height:17px;margin-bottom:5px;display:block;height:40px;}
 .EstNameProdCross a{display:block;height:36px;overflow:hidden;color:#212121;}
-.EstPriceProdCross{text-align:center;margin:0 0 8px 0;font-size:14px;font-family:'Lato',verdana,arial!important;font-weight:700;background-color:#FFFFFF;border:0 solid #cecece;color:#0361a9;}
+.EstPriceProdCross{text-align:center;margin:0 0 8px 0;font-size:14px;font-weight:700;background-color:#FFFFFF;border:0 solid #cecece;color:#0361a9;}
 .EstPriceProdCross .FCPrice .FCPriceValue .FCPriceCent{font-size:0.8rem;}
 .EstDescrProdCross{font-size:10px;text-align:center;margin:100px 0 0 0;display:block;cursor:pointer!important;border:0 solid #cecece;color:#000000;}
 #idListProdCrossFC1 li:hover .EstDescrProdCross{background:#FFFFFF;border:1px solid #cccccc;transition:margin 0.5s ease;margin:-105px 0 0 0;width:100%;height:100px;padding:20px;font-size:13px;line-height:16px;box-sizing:border-box;opacity:0.9;position:relative;font-family:'Lato',verdana,arial;font-weight:400;overflow:hidden;}

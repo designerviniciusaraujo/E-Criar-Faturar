@@ -1,10 +1,9 @@
  <div class=FProdNotErrOr>
 		<div class=zFProdNotFoundHeader>
-		  <div class=font-primary>
-
-		    <h2 class=zFNotFoundTxt>
-          <img src='<PathTo file="images/ico404lupa.svg">'>
-		      Não encontramos produto para esta busca:
+		  <div class=font-primary> 
+		  	<img width=50px src='<PathTo file="images/iconsearch.svg">'>
+		    <h2 class=zFNotFoundTxt> 
+		      Não encontramos produtos para esta busca:
 		    </h2>
           <span class=zFNotFoundSTxt>"<SearchText>"</span>
 		  </div>
@@ -23,17 +22,22 @@
 
 <style>
 .zFPromoNotFound{background:#2196F3;}
-.zFPromoNotFound:hover {box-shadow: 1px 0px 7px #888888; transition: 0.3s}
-.zFPromoNotFound:active {color:#fff;}
-.zFNotFoundTxt {display: flex;margin: 30px auto 0;font-size: 17px;font-size: 1.9em;color:#0361a9;}
-.zFNotFoundTxt img {display: block;margin-right: 10px;}
-.zFPromoNotFound:visited {color:#fff;}
-.zFPromoNotFound { transition: 0.3s; width: 200px; display: block; background: #ef018d; color: #fff; font-size: 1.35em; text-decoration: none; border-radius: 5px; text-align: center; padding: 10px 0; margin: 1.3em auto 0px;  text-transform: uppercase;  }
-.FProdNotErrOr {padding:0px 0px; background: center; width: 100%; max-width: 600px;margin: 0 auto;}
-.zFProdNotFoundPromo li {    font-family: 'Cabin', sans-serif !important;line-height: normal; list-style: none;}
-.zFNotFoundSTxt {display:block;margin:10px auto;color:#969696;font-size: 22px;text-align:center;font-weight:bold;font-family: 'Roboto',verdana,arial;}
-.zFProdNotFoundPromo h2 {    font-family: 'Cabin', sans-serif !important;margin: 5px auto 10px;}
-.zFProdNotFoundPromo { font-family: 'Roboto',verdana,arial;}
-p.zFNotFoundContinue a {    font-family: 'Cabin', sans-serif !important;color:#969696;}
-p.zFNotFoundContinue {    font-family: 'Cabin', sans-serif !important;font-size: 14px; margin: 10px auto;}
+.zFPromoNotFound:hover{box-shadow:1px 0px 7px #888888;transition:0.3s}
+.zFPromoNotFound:active{color:#fff;}
+.zFNotFoundTxt{display:flex;margin:30px auto 0;font-size:17px;font-size:1.9em;color:#313131;position:relative;right:50px;}
+.zFProdNotFoundHeader img{display:inline;float:left;right:60px;position:relative;}
+.zFPromoNotFound:visited{color:#fff;}
+.zFPromoNotFound{transition:0.3s;width:200px;display:block;background:#ef018d;color:#fff;font-size:1.35em;text-decoration:none;border-radius:5px;text-align:center;padding:10px 0;margin:1.3em 0 0px;text-transform:uppercase;}
+.FProdNotErrOr{padding:40px 0px;background:center;width:100%;max-width:600px;margin:0 auto;}
+.zFProdNotFoundPromo li{font-family:'Cabin',sans-serif!important;line-height:normal;list-style:none;}
+.zFNotFoundSTxt{display:block;margin:10px auto;color:#0361a9;font-size:22px;text-align:left;font-weight:bold;font-family:'Roboto',verdana,arial;}
+.zFProdNotFoundPromo h2{font-family:'Cabin',sans-serif!important;margin:5px auto 10px;}
+.zFProdNotFoundPromo{font-family:'Roboto',verdana,arial;}
+p.zFNotFoundContinue a{font-family:'Cabin',sans-serif!important;color:#969696;}
+p.zFNotFoundContinue{font-family:'Cabin',sans-serif!important;font-size:14px;margin:10px auto;}
+@media(max-width:1024px){
+	.zFNotFoundTxt{flex-wrap:wrap;}
+	.zFProdNotFoundHeader img{display:block!important;margin:0 auto;right:0px!important;float:inherit;}
+	.zFNotFoundTxt{right:0px!important;}
+}
 </style>

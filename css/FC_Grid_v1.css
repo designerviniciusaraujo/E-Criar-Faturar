@@ -25,12 +25,12 @@
 .FCContentGrid{height:auto;position:relative;float:left;text-align:left !important;}
 .FCGridMain .FCDescritorGrid{width:100%;height:40px;min-width:40px;min-height:30px;display:block;text-align:center;border:1px solid #dddddd;padding:5px;line-height:17px;white-space: nowrap;}
 
-.ProductDet .FCGridMain .FCDescritorGrid{width:100%;height:40px;display:block;text-align:center;border:1px solid #dddddd;padding:5px;line-height:17px;}
+.ProductDet .FCGridMain .FCDescritorGrid{width:100%;height:40px;text-align:center;border:1px solid #dddddd;padding:5px;line-height:17px;display: flex;justify-content: center;align-items: center;}
 
 .FCBoxGrid{position:relative;width:100%;height:auto !important;min-height:40px;display:table;text-align:left;border:0px solid #cccccc;font-size:13px;padding:0px;margin-bottom:5px;margin-top:0px;}
-.FCDescritorGridDisabled .FCDescritorGrid{background:#dddddd;color:#686868;cursor:not-allowed;}
+.FCDescritorGridDisabled .FCDescritorGrid{color:#686868;cursor:not-allowed;}
 .FCSelectedGrid{border-color:#5c60b4;background:#3e98e4;}
-.FCSelectedGrid span{background:#dddddd;}
+.FCSelectedGrid span{background:white;}
 .FCStepGrid{min-height:40px;display:block;text-align:left;border:0;padding:0;}
 .FCStepGridNumber{width:25px;height:25px;line-height:15px;display:none;float:left;padding:5px 0px 0px 0px;border-radius:50%;background:#4494f9;color:#ffffff;text-align:center;}
 .FCOptionSelected{display:inline-block;font-weight:bold;padding:6px 0;}

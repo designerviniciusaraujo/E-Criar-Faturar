@@ -59,10 +59,8 @@
   </div>
   <!-- Script Filters -->
   <script>
-    sF$.fnAdjustsFilters();
-    
-    iQtdProds=<QtProd>;
-    
+    sF$.fnAdjustsFilters(); 
+    iQtdProds=<QtProd>; 
     if(iQtdProds=="1"){
       var sPages=sF$.fnGetID("idPageCountFC");
       if(sPages)sPages.style.display="none";
@@ -71,21 +69,20 @@
   </script>
   <div id="idPagProdTop"></div>
 </ProdTop>
-<ProdLista>
-  <!-- Prod Lista -->   
-    <div class="DivListProd col-small-6 col-medium-4 col-large-4 col-xlarge-3" onclick="NoCascate('<URLProd>');">
-      <div class="DivProductListProd">
-        <div class="DivProductListImagemProd">
-          <div id="id-video-image<IDProduto>"></div>
-          <script>sF$.fnShowVideo(<IDProduto>,[<ProdFiltersJS>],'<ImagemProdPri>',"<NomeProdUA>");</script>
-          <!--  <div class="DivProductList-fastview font-bold" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow">ESPIAR</a></div> -->
-        </div>
-        <div class="DivProductListNomeProd">
-          <span class="ProductListNomeProd font-regular">
-            <NomeProd>
-          </span>
-        </div>
-        <ul class="avalia">
+<ProdLista> 
+  <FormProd>
+  <div class="DivListProd col-small-6 col-medium-4 col-large-4 col-xlarge-3" onclick="NoCascate('<URLProd>');">
+    <div class="DivProductListProd">
+      <div class="DivProductListImagemProd">
+        <div id="id-video-image<IDProduto>"></div>
+        <script>sF$.fnShowVideo(<IDProduto>,[<ProdFiltersJS>],'<ImagemProdPri>',"<NomeProdUA>");</script>
+        <div class="DivProductList-fastview font-bold" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow">ESPIAR</a></div>
+      </div>
+      <div class="DivProductListNomeProd">
+        <span class="ProductListNomeProd font-regular"><NomeProd></span>
+      </div>
+
+           <ul class="avalia">
           <li class="text-left ProdRating stars">
             <script type="text/javascript">
               iQtdOp=<OpiniaoQtd>;
@@ -94,17 +91,18 @@
             </script>
           </li>
         </ul>
-        <div class="DivProductListPriceProd" style="white-space:nowrap;">
-          <div id="idProdPrice<IDProduto>">
-            <script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script>
-          </div>
-        </div>
+         
+      <div class="DivProductListPriceProd" style="white-space:nowrap;">
+        <div id="idProdPrice<IDProduto>"><script>sF$.fnShowPrice(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>);</script></div>
+        <div class="PriceAVistaLista"><script>sF$.fnShowParcels(<PrecoNum>,<MaxParcelasProdNum>);</script><br><script>sF$.fnMostraDescontoHome(<PrecoNum>);</script></div>
+      </div>
         <a href="<URLProd>" class="boxInteration" onclick="NoCascate('<URLProd>');"> 
         <img src="<BaseLoja>images/bt_mais.png">
         <button class="bt details"> Veja Mais</button>  
         </a>
-      </div>
-    </div> 
+    </div>
+  </div>
+</FormProd> 
 </ProdLista>
 <ProdDet> 
   <!-- Prod Det -->
@@ -115,7 +113,7 @@
       <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6">
         <div id="idBreadcrumb">
           <ul>
-            <li><a href="/categorias.asp?idloja=<IDLoja>" class="ProductStyleBreadCrumblinkFC">Categoria:&nbsp</a></li>
+            <li><a href="/categorias.asp?idloja=<IDLoja>" class="ProductStyleBreadCrumblinkFC"></a></li>
             <li>
               <PathCat>
             </li>
@@ -124,13 +122,9 @@
       </div>
       <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6">
         <div class="SocialProdLinks">
-          <ul class="ProductStyleULFC ProductStyleSocialIcons" id="idShareProd">
-            <li style="white-space:nowrap;"><span><a href="javascript:MostraIndique(<IDLoja>,<IDProduto>)"><img src="<PathTo file="images/iconprodemail.svg">" width="20" height="20" border="0" alt="E-mail" title="Recomende este produto"></a></span></li>
-            <li>
-              <span>
-                <ShareGooglePlus>
-              </span>
-            </li>
+          <ul class="ProductStyleULFC ProductStyleSocialIcons" id="idShareProd"> 
+            <li>Compartilhe:</li>
+            <li class="wts_ic"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<PathTo file="images/ic_det_whatsapp.svg">" width="35" height="35" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></li>
             <li>
               <span>
                 <ShareFacebook>
@@ -143,10 +137,14 @@
             </li>
             <li>
               <span>
+                <ShareGooglePlus>
+              </span>
+            </li> 
+            <li>
+              <span>
                 <SharePinterest>
               </span>
-            </li>
-            <li><span class="ShareWhatsApp show-small"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<PathTo file="images/ic_det_whatsapp.svg">" width="35" height="35" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></span></li>
+            </li> 
           </ul>
         </div>
       </div>
@@ -188,20 +186,10 @@
     </div>
   </div>
   </div>
-  <!-- Begin: Cross Selling - Description - Video - BarCode - Comments -->
-  <div class="row">
-    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left">
-      <BuyTogether>
-    </div>
-    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 CrossSellingFC">
-      <CrossSelling>
-    </div>
-    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12">
-      <hr>
-    </div>
-    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left descr-prod">
+      <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left descr-prod">
       <div class="ProductStyleBoxDescriptionFC">
-        <h2>Descrição:</h2>
+            <hr>
+        <h2>Descrição:</h2> 
       </div>
       <div class="ProductStyleBoxDescriptionFC">
         <Descricao>
@@ -220,10 +208,21 @@
       <div class="ProductStyleBoxDescriptionFC">
         <BarCode>
       </div>
-      <div class="ProductStyleBoxDescriptionFC">
+      
+    </div>
+  <!-- Begin: Cross Selling - Description - Video - BarCode - Comments -->
+  <div class="row">
+    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 text-left">
+      <CrossSelling>
+    </div>
+    <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12 CrossSellingFC">
+      <BuyTogether>
+    </div>
+    <div class="ProductStyleBoxDescriptionFC">
         <Comments>
       </div>
-    </div>
+ 
+
     <div class="col-small-12 col-medium-12 col-large-12 col-xlarge-12">
       <hr>
     </div>
